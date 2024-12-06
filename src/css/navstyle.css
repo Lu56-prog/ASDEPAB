@@ -6,6 +6,19 @@
     width: 150%;
 }
 
+.navbar{
+    position: static;
+    width: 100%;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar.fixed{
+    position: fixed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .navbar-brand {
     color: black;
     font-size: 40px;
@@ -82,8 +95,6 @@
     background-color: rgba(0,0,0,0.05);
 }
 
-
-
 /* Responsive Adjustments */
 @media (max-width: 575.98px) {
 
@@ -104,7 +115,7 @@
     }
 
     .navbar {
-        position: relative;
+        position: fixed;
     }
 
     .navbar > .container {
