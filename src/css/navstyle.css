@@ -1,8 +1,9 @@
 /* Navbar and Container Styles */
-.navbar > .container {
+.navbar > .container-fluid {
     background-color: rgb(227, 241, 246);
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
+    width: 150%;
 }
 
 .navbar-brand {
@@ -20,14 +21,16 @@
     margin-right: 20px;
 }
 
- 
-
 .profile-img {
     width: 100%;
 }
 
 .logo1 {
     text-align: center;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
 }
 
 .nav-link {
