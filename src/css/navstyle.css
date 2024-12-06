@@ -1,6 +1,6 @@
 /* Navbar and Container Styles */
 .navbar > .container {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(227, 241, 246);
     justify-content: space-evenly;
     text-align: center;
 }
