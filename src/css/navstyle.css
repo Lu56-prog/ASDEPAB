@@ -2,7 +2,7 @@
 /* Fuentes de texto */
 @font-face {
     font-family: Quicksand;
-    src: url(Fuentes/Quicksand-SemiBold.ttf) format(truetype);
+    src: url(Fuentes/Quicksand-Light.ttf) format(truetype);
     font-weight: 100;
 }
 
@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: Quicksand;
-    src: url(Fuentes/Quicksand-Light.ttf) format(truetype);
+    src: url(Fuentes/Quicksand-SemiBold.ttf) format(truetype);
     font-weight: 700;
 }
 
@@ -26,6 +26,7 @@
 
 /* Fuentes de texto terminadas */
 .navbar > .container-fluid {
+    font-family: Quicksand;
     background-color: rgb(227, 241, 246);
     justify-content: space-around;
     text-align: center;
@@ -48,6 +49,7 @@ h1{
 .fw-normal{
     font-weight: 900;
     font-size: 36px;
+    margin-top: 20px;
 }
 
 .fw_junior .featurett{
@@ -63,6 +65,10 @@ h1{
     font-weight: 400;
 }
 
+.fw-description{
+    font-size: 18px;
+}
+
 .fw-welcome{
     font-weight: 400;
     font-size: 22px;
@@ -72,6 +78,71 @@ h1{
     margin-bottom: 10px;
     border-radius: 100%;
     box-shadow: 0px 0px 30px #b0b0b0;
+}
+
+.container-Novedades{
+    text-align: center;
+    justify-content: center;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+.custom-bg-ITIPB {
+    background-color: rgb(200, 230, 250);
+}
+
+.custom-bg-historyPB {
+    background-color: rgb(225, 95, 90); /* Rojo claro */
+}
+
+.custom-historyPB {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.custom-historyPB-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.custom-descriptionB {
+    font-weight: 700;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.custom-descriptionPB-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.btnITIPB {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    background-color: #007bff; 
+    color: #fff; 
+}
+
+.btnITIPB:hover {
+    background-color: #0056b3; 
+    border-color: #0056b3;
+    color: #fff;
+}
+
+.text-center .btnITIPB {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 25px;
 }
 
 .navbar {
