@@ -72,6 +72,7 @@ h1{
 .fw-welcome{
     font-weight: 400;
     font-size: 22px;
+    margin-bottom: 2.5rem;
 }
 
 .img-presidente{
@@ -92,13 +93,13 @@ h1{
 }
 
 .custom-bg-historyPB {
-    background-color: rgb(225, 95, 90); /* Rojo claro */
+    background-color: rgb(225, 95, 90); 
 }
 
 .custom-historyPB {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
 }
 
 .custom-historyPB-description {
@@ -130,6 +131,7 @@ h1{
     border: 2px solid #007bff;
     background-color: #007bff; 
     color: #fff; 
+    margin-bottom: 2.5rem;
 }
 
 .btnITIPB:hover {
@@ -249,6 +251,12 @@ h1{
 @media (min-width: 821px) {
     .a-mobile, .p-mobile {
         display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .custom-bg-historyPB {
+        margin-top: 1.5rem;
     }
 }
 
