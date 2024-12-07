@@ -1,4 +1,30 @@
 /* Navbar and Container Styles */
+/* Fuentes de texto */
+@font-face {
+    font-family: Quicksand;
+    src: url(Fuentes/Quicksand-SemiBold.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(Fuentes/Quicksand-Medium.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(Fuentes/Quicksand-Light.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(Fuentes/Quicksand-Bold.ttf);
+    font-weight: 900;
+}
+
+/* Fuentes de texto terminadas */
 .navbar > .container-fluid {
     background-color: rgb(227, 241, 246);
     justify-content: space-around;
@@ -8,6 +34,22 @@
 
 main {
     width: 100%;
+}
+
+body{
+    font-family: Quicksand
+}
+
+h1{
+    font-weight: 900;
+}
+
+h2{
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
 }
 
 .navbar {
