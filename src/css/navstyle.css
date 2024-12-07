@@ -44,19 +44,19 @@ main {
 }
 
 .nav-link {
-    color: rgb(79, 233, 18);
+    color: rgb(20, 20, 20);
     border-style: solid;
     border-bottom-width: 1px;
 }
 
 .nav-link:hover, .nav-link:focus {
-    color: rgb(174, 0, 255);
+    color: rgb(0, 112, 190);
     border-style: solid;
     border-bottom-width: 1px;
 }
 
-.dropdown-toggle:focus {
-    color: rgb(21, 255, 0) !important;
+.dropdown-toggle:focus{
+    color: rgb(0, 112, 190) !important; 
     border-style: solid;
     border-bottom-width: 1px;
 }
@@ -95,7 +95,7 @@ main {
 }
 
 .dropdown-item:hover {
-    background-color: rgba(227, 241, 246, 0.5);
+    background-color: rgba(227, 241, 246, 0.8);
 }
 
 .carousel-item {
