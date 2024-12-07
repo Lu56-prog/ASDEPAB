@@ -3,10 +3,14 @@
     background-color: rgb(227, 241, 246);
     justify-content: space-around;
     text-align: center;
-    width: 150%;
+    width: 100%;
 }
 
-.navbar{
+main {
+    width: 100%;
+}
+
+.navbar {
     position: static;
     width: 100%;
     z-index: 100;
@@ -14,7 +18,7 @@
     padding: 0;
 }
 
-.navbar.fixed{
+.navbar.fixed {
     position: fixed;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -35,7 +39,7 @@
     text-align: center;
 }
 
-.navbar-collapse{
+.navbar-collapse {
     flex-grow: 0;
 }
 
@@ -94,23 +98,60 @@
     background-color: rgba(227, 241, 246, 0.8);
 }
 
+.carousel-item {
+    height: 500px;
+}
+
+.p-mobile {
+    width: min-content;
+}
+
+.a-mobile {
+    width: min-content;
+}
+
+/* New changes for mobile logos and dropdown positioning */
+@media (min-width: 821px) {
+    .a-mobile, .p-mobile {
+        display: none !important;
+    }
+}
+
+/* Ensure profile dropdown appears above other content */
+.profile-mobile .dropdown-menu,
+.profile-desktop .dropdown-menu {
+    position: absolute;
+    z-index: 1100; /* Higher z-index to ensure it's above other content */
+    top: 100%;
+    right: 0;
+    left: auto;
+    margin-top: 0.125rem;
+}
+
+.navbar-nav .dropdown-menu {
+    z-index: 1100;
+}
+
+.profile {
+    position: relative;
+}
+
 /* Responsive Adjustments */
-@media (max-width: 575.98px) {
+@media (max-width: 1025px) {
+    .p-mobile {
+        width: 15%;
+    }
+
+    .a-mobile {
+        width: 25%;
+    }
 
     .logo1, .logo2 {
         display: inline-block;
-        width: auto;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
         margin: 0 10px;
-    }
-
-    .asdepab-logo {
-        width: 35%;
-        max-width: 100px;
-    }
-
-    .pascual-logo {
-        width: 60%;
-        max-width: 500px;
     }
 
     .navbar {
@@ -121,12 +162,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
-    .navbar-brand {
-        order: 1;
-        margin-right: auto;
-        margin-left: auto;
     }
 
     .navbar-toggler {
@@ -148,7 +183,7 @@
     }
 
     .profile-mobile .dropdown-menu {
-        position:absolute;
+        position: absolute;
         z-index: 1050;
         top: 100%;
         right: 0;
