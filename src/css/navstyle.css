@@ -55,6 +55,10 @@ h1{
     letter-spacing: 100px;
 }
 
+.fw-junior{
+    margin-bottom: 12px;
+}
+
 .lead .fw-description{
     font-weight: 400;
 }
