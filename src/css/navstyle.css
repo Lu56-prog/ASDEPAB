@@ -279,10 +279,6 @@ h1{
     margin-bottom: -10px;
 }
 
-.divider-redes {
-    margin: 10px 0;
-}
-
 .text-direction {
     margin-left: 10px;
     display: inline-block;
@@ -334,6 +330,20 @@ h1{
 @media (min-width: 821px) {
     .a-mobile, .p-mobile {
         display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #505050;
+    }
+
+    .container-redes-sociales, .container-ubicacion {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
