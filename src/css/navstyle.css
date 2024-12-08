@@ -248,6 +248,7 @@ h1{
     width: min-content;
 }
 
+<<<<<<< HEAD
 .map-container {
     position: relative;
     width: 90%;
@@ -284,6 +285,13 @@ h1{
 }
 
 
+=======
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+>>>>>>> 01daacaa8512bffa0d06e72fb0fd7a39c7545a74
 /* New changes for mobile logos and dropdown positioning */
 @media (min-width: 821px) {
     .a-mobile, .p-mobile {
