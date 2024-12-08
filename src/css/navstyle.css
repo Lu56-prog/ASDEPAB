@@ -253,6 +253,7 @@ h1{
     color: #505050;
 }
 
+
 .links {
     display: flex;
     justify-content: space-between;
@@ -268,17 +269,17 @@ h1{
     transition: color 0.3s;
 }
 
-.links a:hover {
+.links a:hover{
     color: #111111;
 }
 
-.container-redes-sociales, .container-ubicacion {
+.container-redes-sociales, .container-ubicacion, .container-email{
     flex: 1;
     max-width: 45%;
     margin-bottom: 10px;
 }
 
-.title-redes, .title-ubicacion {
+.title-redes, .title-ubicacion, .title-email{
     font-weight: 700;
     margin-bottom: -10px;
 }
@@ -290,6 +291,37 @@ h1{
 }
 
 .text-direction svg {
+    vertical-align: top;
+}
+
+.text-email {
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text-email svg {
+    vertical-align: top;
+}
+
+.container-redes-sociales, .container-ubicacion, .container-email {
+    flex: 1;
+    max-width: 45%;
+    margin-bottom: 10px;
+}
+
+.title-redes, .title-ubicacion, .title-email {
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+
+.text-direction, .text-email {
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text-direction svg, .text-email svg {
     vertical-align: top;
 }
 
