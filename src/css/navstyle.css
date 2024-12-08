@@ -430,15 +430,6 @@ h1{
     .navbar-nav .dropdown-menu {
         z-index: 1045;
     }
-}
-
-@media (min-width: 821px) {
-    .a-mobile, .p-mobile {
-        display: none !important;
-    }
-}
-
-@media (max-width: 768px) {
     .links {
         display: flex;
         flex-direction: column;
@@ -453,6 +444,12 @@ h1{
 
     .custom-bg-historyPB {
         margin-top: 1.5rem;
+    }
+}
+
+@media (min-width: 821px) {
+    .a-mobile, .p-mobile {
+        display: none !important;
     }
 }
 
