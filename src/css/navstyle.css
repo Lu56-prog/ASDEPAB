@@ -249,6 +249,10 @@ h1{
     width: min-content;
 }
 
+.derechos-autor {
+    color: #505050;
+}
+
 .links {
     display: flex;
     justify-content: space-between;
@@ -271,7 +275,7 @@ h1{
 .container-redes-sociales, .container-ubicacion {
     flex: 1;
     max-width: 45%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .title-redes, .title-ubicacion {
