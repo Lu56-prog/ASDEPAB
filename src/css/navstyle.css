@@ -283,20 +283,56 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    color: #505050;
     flex-wrap: wrap;
 }
 
 .row a {
-    color: #525252;
     text-decoration: none;
     padding-bottom: 20px;
     transition: color 0.3s;
+    transform: 0.3s;
 }
 
-.row a:hover{
-    color: #1A1A1A;
+.facebook{
+    color: #1877F2;
 }
+
+.twitter{
+    color: #111111;
+}
+
+.maps{
+    color: #F44336; 
+}
+
+.instagram{
+    color: #E4405F;;
+}
+
+.gmail {
+    color: #444444; /* Naranja para el ícono de correo */
+}
+
+.facebook:hover {
+    color:  #A0C8F5;
+}
+
+.twitter:hover {
+    color: #666666;
+}
+
+.instagram:hover {
+    color: #F2A9D5
+}
+
+.maps:hover{
+    color: #FFB3B3
+}
+
+.gmail:hover {
+    color: #B3B3B3; /* Naranja para el ícono de correo */
+}
+
 
 .container-redes-sociales, .container-ubicacion, .container-email{
     flex: 1;
@@ -349,7 +385,7 @@ h1{
 
 .text-direction svg, .text-email svg {
     vertical-align: top;
-}
+} 
 
 .map-container {
     position: relative;
@@ -437,7 +473,8 @@ h1{
     .navbar-nav .dropdown-menu {
         z-index: 1045;
     }
-    .links {
+    
+    .row {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
