@@ -28,6 +28,7 @@
 
 .navbar > .container-fluid {
     font-family: Quicksand;
+    color: #262626;
     background-color: rgb(227, 241, 246);
     justify-content: space-around;
     text-align: center;
@@ -79,7 +80,7 @@
 }
 
 .navbar-toggler {
-    background-color: black;
+    background-color: #262626;
 }
 
 .perfil, .perfil:hover, .perfil:focus {
@@ -99,7 +100,7 @@
 }
 
 .dropdown-item a {
-    color: black;
+    color: #262626;
     text-decoration: none;
     display: block;
     width: 100%;
@@ -152,6 +153,7 @@ main {
 body{
     font-family: Quicksand;
     background-color: #f0f0f0;
+    color:#262626;
 }
 
 h1{
@@ -159,6 +161,7 @@ h1{
 }
 
 .fw-normal{
+    color: #262626;
     font-size: 36px;
     font-weight: 900;
     margin-top: 20px;
@@ -170,6 +173,7 @@ h1{
 }
 
 .fw-junior{
+    color: #262626;
     margin-bottom: 12px;
 }
 
@@ -178,10 +182,12 @@ h1{
 }
 
 .fw-description{
+    color: #262626;
     font-size: 18px;
 }
 
 .fw-welcome{
+    color: #262626;
     font-weight: 400;
     font-size: 22px;
     margin-bottom: 2.5rem;
@@ -211,18 +217,21 @@ h1{
 }
 
 .custom-historyPB {
+    color: #262626;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .custom-historyPB-description {
+    color: #262626;
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
 
 .custom-descriptionB {
+    color: #262626;
     font-weight: 700;
     font-size: 2rem;
     font-weight: bold;
@@ -230,6 +239,7 @@ h1{
 }
 
 .custom-descriptionPB-description {
+    color: #262626;
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
@@ -285,13 +295,14 @@ h1{
 }
 
 .row a:hover{
-    color: #111111;
+    color: #1A1A1A;
 }
 
 .container-redes-sociales, .container-ubicacion, .container-email{
     flex: 1;
     max-width: 45%;
     margin-bottom: 10px;
+    color: #505050;
 }
 
 .title-redes, .title-ubicacion, .title-email{
