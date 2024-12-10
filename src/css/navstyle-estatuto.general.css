@@ -1,0 +1,37 @@
+.container-estatuto-general {
+    padding: 20px;
+    text-align: center;
+}
+
+.title-estatuto-general {
+    font-weight: 900;
+    font-size: 38px;
+    margin-top: 15px;
+}
+
+.text-muted {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.btnestatutog {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnestatutog:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 120px; 
+    }
+}

@@ -63,26 +63,12 @@
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); 
 }
 
-footer.container {
-    text-align: left;
-}
-
-footer.row {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-footer .container-redes-sociales, footer .container-ubicacion, footer .container-email {
-    text-align: left;
-}
-
 /* Media Query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     .container-mn {
         flex-direction: column;
         gap: 50px;
-        margin-top: 25%px;
+        margin-top: 25%;
 }
 
     .container-mision, .container-vision {
