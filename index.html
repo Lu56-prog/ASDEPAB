@@ -276,8 +276,27 @@
         </iframe>
       </div>
 
-      <hr class="featurette-divider">
+      <hr class="divider-nuestro-insituto">
 
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+            <h2 class="subtitle-nuestra-institucion">Nuestro Instituto Técnico Industrial <br> Pascual Bravo</h2>
+            <div class="container-nuestra-institucion">
+              <video 
+              class="video-nuestra-institucion w-100" 
+              autoplay 
+              muted 
+              loop 
+              onclick="togglePlayPause(this)">
+              <source src="/src/img/nuestro instituto.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento de video.
+            </video>
+            </div>
+            <p class="frase-pascualinos">"Pascualinos hoy, Pascualinos toda la vida"</p>
+          </div>
+        </div>
+      </div>
       <!-- /END THE FEATURETTES -->
     </div><!-- /.container -->
 
@@ -345,6 +364,15 @@
     crossorigin="anonymous"></script>
   <script src="/src/js/checklogin.js"></script>
   <script src="/src/js/navfixed.js"></script>
+  <script>
+    function togglePlayPause(video) {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+  </script>
 </body>
 
 </html>

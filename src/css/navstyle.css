@@ -24,6 +24,12 @@
     font-weight: 900;
 }
 
+@font-face {
+    font-family: Lora;
+    src: url(Fuentes/Lora-MediumItalic.ttf) format(truetype);
+    font-weight: 900;
+}
+
 /* Navbar */
 
 .navbar > .container-fluid {
@@ -437,6 +443,48 @@ footer .container-email {
     margin-top: 10px;
 }
 
+.container-nuestra-institucion {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle-nuestra-institucion {
+    color: #222222;
+    text-align: center;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: 700;
+    margin: auto;
+    margin-top: -35px;
+}
+
+.video-nuestra-institucion {
+    border-radius: 8px;
+    border: 2px solid #dee2e6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.frase-pascualinos {
+    font-family: Lora;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #626a70;
+    font-style: italic;
+    padding: 10px 0;
+}
+
 /* Navbar */
 .navbar {
     background-color: rgb(227, 241, 246);
@@ -570,6 +618,31 @@ footer .container-email {
 
     .custom-bg-historyPB {
         margin-top: 1.5rem;
+    }
+    .subtitle-nuestra-institucion {
+        font-size: 24px;
+    }
+    
+    .video-nuestra-institucion {
+        max-height: 350px;
+    }
+    
+    .pause-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        color: rgba(0, 0, 0, 0.8);
+        display: none;
+        pointer-events: none;
+    }
+    .pause-icon.active {
+        display: block;
+    }
+
+    .frase-pascualinos {
+        font-size: 16px;
     }
 }
 

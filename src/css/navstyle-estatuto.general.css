@@ -1,33 +1,44 @@
 .container-estatuto-general {
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .title-estatuto-general {
+    text-align: center;
     font-weight: 900;
     font-size: 38px;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: -10px;
 }
 
 .text-muted {
-    font-size: 16px;
-    color: #6c757d;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.75;
+    color: #111111;
+    padding: 0px 20px;
+    text-align: justify;
 }
 
 .btnestatutog {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
     font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-weight: 600;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    background-color: #007bff; 
+    color: #fff; 
+    margin-bottom: 2.5rem;
 }
 
 .btnestatutog:hover {
     background-color: #0056b3;
+}
+
+.featurette-divider{
+    margin-top: 40px;
 }
 
 @media (max-width: 768px) {
