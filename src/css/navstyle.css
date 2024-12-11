@@ -443,31 +443,7 @@ footer .container-email {
     margin-top: 10px;
 }
 
-.container-nuestra-institucion {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 15px;
-    background-color: #f8f9fa;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.subtitle-nuestra-institucion {
-    color: #222222;
-    text-align: center;
-    justify-content: center;
-    font-size: 34px;
-    font-weight: 700;
-    margin: auto;
-    margin-top: -35px;
-}
-
 .video-nuestra-institucion {
-    border-radius: 8px;
-    border: 2px solid #dee2e6;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     width: 100%;
     height: auto;
     max-height: 500px;
@@ -477,12 +453,12 @@ footer .container-email {
 .frase-pascualinos {
     font-family: Lora;
     text-align: center;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 2px;
     color: #626a70;
     font-style: italic;
-    padding: 10px 0;
 }
 
 /* Navbar */
@@ -524,11 +500,19 @@ footer .container-email {
         padding: 20px;
         margin: 20px;
     }
+    .video-nuestra-institucion {
+        height: 250px; /* Ajusta la altura para pantallas pequeñas */
+        object-fit: cover; /* Mantiene la proporción del video */
+    }
 }
 
 @media (max-width: 480px) {
     .title-mision-vision {
         font-size: 26px;
+    }
+
+    .video-nuestra-institucion {
+        height: 200px; /* Ajuste aún mayor para pantallas muy pequeñas */
     }
 
     .subtitle-mision-vision {
