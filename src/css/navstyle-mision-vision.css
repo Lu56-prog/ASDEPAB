@@ -8,7 +8,7 @@
 }
 
 .container-mision, .container-vision {
-    background-color: rgba(248, 249, 250, 0.65); 
+    background-color: rgba(248, 249, 250, 0.75); 
     background-size: cover; 
     background-position: center; 
     background-blend-mode: overlay; 
@@ -67,7 +67,7 @@
 
 .subtitle-mision, .subtitle-vision, 
 .description-mision, .description-vision {
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); 
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
 }
 
 /* Media Query para pantallas pequeñas (móviles) */

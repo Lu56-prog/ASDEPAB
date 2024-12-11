@@ -1,0 +1,48 @@
+.container-organigrama {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-organigrama {
+    text-align: center;
+    font-weight: 900;
+    font-size: 38px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.text-muted {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.75;
+    color: #111111;
+    padding: 0px 20px;
+    text-align: justify;
+}
+
+.btnorganigramag {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    background-color: #007bff; 
+    color: #fff; 
+    margin-bottom: 2.5rem;
+}
+
+.btnorganigramag:hover {
+    background-color: #0056b3;
+}
+
+.featurette-divider{
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 120px; 
+    }
+}
