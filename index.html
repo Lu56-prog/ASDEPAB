@@ -51,8 +51,9 @@
             <a class="nav-link" href="#">Inicio</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/conocenos.html">Conocénos</a></li>
               <li><a class="dropdown-item" href="/mision-vision.html">Misión y Visión</a></li>
               <li><a class="dropdown-item" href="/estatuto-general.html">Estatuto General</a></li>
               <li><a class="dropdown-item" href="/organigrama.html">Organigrama</a></li>
@@ -175,10 +176,6 @@
       <hr class="featurette-divider">
 
       <div class="row align-items-md-stretch">
-        <video class="video-nuestra-institucion my-3" autoplay muted loop>
-          <source src="/src/img/nuestro instituto.mp4" type="video/mp4">
-          Tu navegador no soporta el elemento de video.
-        </video>
         <div class="col-md-6">
           <div class="h-100 p-5 custom-bg-ITIPB rounded-3">
             <h2 class="custom-historyPB">Reseña Histórica</h2>
@@ -277,12 +274,21 @@
         </iframe>
       </div>
 
+      <hr class="divider-nuestro-insituto">
+
       <div class="container mt-5">
         <div class="row justify-content-center">
-          <p class="frase-pascualinos">"Pascualinos hoy, Pascualinos toda la vida"</p>
+          <div class="col-md-8">
+            <h2 class="subtitle-nuestra-institucion">Nuestro Instituto Técnico Industrial <br> Pascual Bravo</h2>
+            <div class="container-nuestra-institucion">
+              <video class="video-nuestra-institucion w-100" autoplay muted loop onclick="togglePlayPause(this)">
+              <source src="/src/img/nuestro instituto.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento de video.
+            </video>
+            </div>
+            <p class="frase-pascualinos">"Pascualinos hoy, Pascualinos toda la vida"</p>
+          </div>
         </div>
-      </div>
-    </div>
     <!-- /END THE FEATURETTES -->
     </div><!-- /.container -->
 
@@ -361,6 +367,15 @@
     crossorigin="anonymous"></script>
   <script src="/src/js/checklogin.js"></script>
   <script src="/src/js/navfixed.js"></script>
+  <script>
+    function togglePlayPause(video) {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+  </script>
 </body>
 
 </html>
