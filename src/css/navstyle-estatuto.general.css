@@ -45,4 +45,12 @@
     body {
         padding-bottom: 120px; 
     }
+
+    .title-estatuto-general{
+        margin-top: 25%;
+    }
+
+    .text-muted{
+        text-align: left;
+    }
 }

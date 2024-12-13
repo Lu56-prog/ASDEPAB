@@ -527,8 +527,8 @@ padding: 10px 0;
         margin: 20px;
     }
     .video-nuestra-institucion {
-        height: 250px; /* Ajusta la altura para pantallas pequeñas */
-        object-fit: cover; /* Mantiene la proporción del video */
+        height: 250px; 
+        object-fit: cover; 
     }
 }
 
@@ -538,7 +538,7 @@ padding: 10px 0;
     }
 
     .video-nuestra-institucion {
-        height: 200px; /* Ajuste aún mayor para pantallas muy pequeñas */
+        height: 200px; 
     }
 
     .subtitle-mision-vision {

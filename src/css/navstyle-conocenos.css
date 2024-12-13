@@ -1,13 +1,26 @@
-.desceription-1, .desceription-2{
-    text-align: justify;
+.title-conocenos{
+    font-size: 40px;
+    font-weight: 900;
 }
 
-.desceription-2{
-    margin: 0 50px;
+.subtitle-conocenos{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.subtitle-QS{
+    font-weight: 700;
+}
+
+
+
+.desceription-1, .desceription-2, .desceription-3{
+    text-align: justify;
 }
 
 .cuadro-imagen1{
     background-color: rgb(235, 105, 100); 
+    margin-right: 20px;
     border-radius: 100%;
     border: 2px solid #dee2e6;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -20,10 +33,6 @@
     object-fit: cover;
 }
 
-.cuadrado-description2{
-    background-color: rgb(235, 105, 100); 
-}
-
 .cuadro-imagen2{
     background-color: #fff;
     border-radius: 8px;
@@ -31,10 +40,45 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+.cuadro1-C{
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    border: 2px solid #dee2e6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cuadro2-C{
+    background-color: rgb(128, 128, 128);
+    color: #fff;
+    border: 2px solid #dee2e6;
+    box-shadow: 0 4px 6px rgba(112, 112, 112, 0.2);
+}
+
+.cuadro3-C{
+    background-color:rgb(200, 230, 250);
+    border: 2px solid #dee2e6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.imagen2-antigua{
+    width: 100%;
+    height: auto;
+}
 
 @media (max-width: 768px) {
     .title-conocenos{
+        margin-top: 25%;
+    }
+
+    .desceription-1, .desceription-2, .desceription-3{
+        text-align: left;
+    }
+    
+    .cuadro2-C{
+        margin-bottom: 1.5rem;
+    }
+
+    .cuadro-imagen1{
         margin: 0;
-        margin-top: 150px;
     }
 }

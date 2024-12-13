@@ -72,6 +72,14 @@
 
 /* Media Query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
+    .title-mision-vision{
+        margin-top: 25%;
+    }
+
+    .description-mision, .description-vision{
+        text-align: left;
+    }
+    
     .container-mn {
         flex-direction: column;
         gap: 50px;
