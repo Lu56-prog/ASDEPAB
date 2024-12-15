@@ -1,0 +1,102 @@
+
+/* Main */
+
+/* Home Section */
+
+.home-section {
+    width: 100%;
+    height: 100vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/img/imagen-bloque1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    opacity: 1;
+}
+
+.home-section article {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-section article h2 {
+    font-size: 45px;
+}
+
+.home-section article div {
+    height: 2px;
+    width: 100%;
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 0px;
+    margin: 5px 0px;
+}
+
+/* Fin Home Section */
+
+/* Info Section */
+
+.info-section {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px;
+    margin: 50px 20px 50px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.info-section h1 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    color: rgb(52, 58, 64);
+}
+
+.info-section p {
+    font-size: 1.2rem;
+    color: rgb(108, 117, 125);
+}
+
+/* Fin Info Section */
+
+/* Option Section */
+
+.option-section {
+    width: 100%;
+    height: 60vh;
+}
+
+.option-block {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    padding: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.egresado {
+    background-color: rgb(255, 47, 47);
+    height: 60vh;
+    
+}
+
+.empresa {
+    background-color: rgb(0, 195, 255);
+    height: 60vh;
+}
+
+.option-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: rgb(0, 123, 255);
+    color: white;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Fin Option Section */
+
+/* Fin Main */
