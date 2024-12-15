@@ -37,8 +37,8 @@
             <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
           </a>
           <ul class="dropdown-menu">
-            <li class="dropdown-item" id="register-mobile"><a href="Registro.html">Registrarse</a></li>
-            <li class="dropdown-item" id="login-mobile"><a href="Inicio.html">Iniciar Sesión</a></li>
+            <li class="dropdown-item" id="register-mobile"><a href="/Opciones-registro.html">Registrarse</a></li>
+            <li class="dropdown-item" id="login-mobile"><a href="/Opciones-registro.html">Iniciar Sesión</a></li>
             <li class="dropdown-item" id="logout-mobile"><a href="#" class="logout-btn">Cerrar Sesión</a>
             </li>
           </ul>
@@ -86,8 +86,8 @@
             <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
           </a>
           <ul class="dropdown-menu">
-            <li class="dropdown-item" id="register-pc"><a href="Registro.html">Registrarse</a></li>
-            <li class="dropdown-item" id="login-pc"><a href="Inicio.html">Iniciar Sesión</a></li>
+            <li class="dropdown-item" id="register-pc"><a href="/Opciones-registro.html">Registrarse</a></li>
+            <li class="dropdown-item" id="login-pc"><a href="/Opciones-registro.html">Iniciar Sesión</a></li>
             <li class="dropdown-item" id="logout-pc"><a href="#" class="logout-btn">Cerrar Sesión</a></li>
           </ul>
         </li>
@@ -97,7 +97,6 @@
   </nav>
 
   <main>
-
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -132,7 +131,7 @@
             <div class="carousel-caption d-flex flex-column justify-content-center align-items-center ">
               <h1>One more for good measure.</h1>
               <p>Some representative placeholder content for the third slide of this carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="index-trabajo.html">Página de Trabajo</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/Opciones-registro.html">Página de Trabajo</a></p>
             </div>
           </div>
         </div>
@@ -356,6 +355,29 @@
     </div>
   </footer>
 
+  <!-- Modal -->
+  <div class="modal fade" id="ModalInicio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-inicio modal-content rounded-4 shadow">
+        <div class="modal-header border-bottom-0">
+          <h1 class="modal-title fs-5">¡Haz parte de ASDEPAB!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-0">
+          <p>¡Te damos la bienvenida! Únete a nuestra comunidad y disfruta de contenido exclusivo, ofertas especiales y mucho más.</p>
+        </div>
+        <div class="modal-footer flex-column gap-2 pb-3 border-top-0 mb-2">
+          <div>
+            <a href="/Opciones-registro.html" class="btn-modal-inicio">
+                ¡Comienza ahora!
+            </a>
+        </div>
+          </a>
+        </div>
+      </div>
+      </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
@@ -372,6 +394,16 @@
         video.pause();
       }
     }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var isReload = performance.getEntriesByType("navigation")[0].type === "reload";
+      if (!sessionStorage.getItem("modalShown") || isReload) {
+        var myModal = new bootstrap.Modal(document.getElementById('ModalInicio'));
+        myModal.show();
+        sessionStorage.setItem("modalShown", "true");
+      }
+    });
   </script>
 </body>
 

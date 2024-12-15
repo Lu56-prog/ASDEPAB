@@ -55,7 +55,7 @@
 }
 
 .cuadro3-C{
-    background-color:rgb(200, 230, 250);
+    background-color:rgb(190, 240, 255);
     border: 2px solid #dee2e6;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -67,7 +67,7 @@
 
 @media (max-width: 768px) {
     .title-conocenos{
-        margin-top: 25%;
+        margin-top: 28%;
     }
 
     .desceription-1, .desceription-2, .desceription-3{

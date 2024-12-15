@@ -20,8 +20,12 @@
     text-align: justify;
 }
 
+.modal{
+    background-color: red;
+}
+
 .btnorganigramag {
-    background-color: #3498db; 
+    background-color: #1E90FF; 
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
@@ -34,7 +38,7 @@
 }
 
 .btnorganigramag:hover {
-    background-color: #2980b9;
+    background-color: #0077cc;
 }
 
 .featurette-divider{
@@ -47,7 +51,7 @@
     }
 
     .title-organigrama{
-        margin-top: 25%;
+        margin-top: 28%;
     }
 
     .text-muted{

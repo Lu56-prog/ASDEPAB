@@ -214,11 +214,15 @@ h1{
 }
 
 .custom-bg-ITIPB {
-    background-color: rgb(200, 230, 250);
+    background-color: rgb(190, 240, 255);
+    border: 2px solid #dee2e6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .custom-bg-historyPB {
-    background-color: rgb(235, 105, 100); 
+    background-color: rgb(245, 85, 80); 
+    border: 2px solid #dee2e6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .custom-historyPB {
@@ -250,8 +254,8 @@ h1{
     margin-bottom: 1rem;
 }
 
-.btnITIPB {
-    background-color: #3498db; 
+.btnITIPB, .btn-modal{
+    background-color: #1E90FF; 
     color: #fff;
     padding: 15px 30px;
     font-size: 1.5rem;
@@ -265,7 +269,29 @@ h1{
 }
 
 .btnITIPB:hover {
-    background-color: #2980b9;
+    background-color: #0077cc;
+}
+
+.btn-modal-inicio{
+    background-color: #1E90FF; 
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-modal-inicio:hover {
+    background-color: #0077cc;
+}
+
+.modal-inicio{
+    background-color: #fcfcfc;
 }
 
 .text-center .btnITIPB {

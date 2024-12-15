@@ -41,7 +41,6 @@
 .title-mision-vision{
     font-weight: 900;
     font-size:38px;
-    margin-top: 30px;
 }
 
 .subtitle-mision-vision{
@@ -72,8 +71,8 @@
 
 /* Media Query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
-    .title-mision-vision{
-        margin-top: 25%;
+    body {
+        padding-bottom: 120px; 
     }
 
     .description-mision, .description-vision{
@@ -83,8 +82,11 @@
     .container-mn {
         flex-direction: column;
         gap: 50px;
-        margin-top: 25%;
-}
+        margin-top: 8%;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
 
     .container-mision, .container-vision {
         width: 100%;
@@ -93,7 +95,7 @@
     }
 
     .title-mision-vision {
-        margin-top: 25%;
+        margin-top: 18%;
         margin-bottom: 12px;
         order: 0; 
     }
