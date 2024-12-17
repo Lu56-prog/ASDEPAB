@@ -1,0 +1,21 @@
+.title-album{
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.subtitle-album{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .title-album {
+        margin-top: 25%;
+        margin-bottom: 12px;
+        order: 0; 
+    }
+
+    .subtitle-album{
+        margin-bottom: 12px;
+    }
+}
