@@ -18,7 +18,7 @@
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 48%;
-    height: 450px;
+    height: 520px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,7 +45,7 @@
 
 .subtitle-mision-vision{
     font-weight: 700;
-    font-size:28px;
+    font-size: 34px;
 }
 
 .subtitle-mision, .subtitle-vision {
@@ -58,7 +58,7 @@
 
 .description-mision, .description-vision {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.75;
     color: #111111;
     text-align: justify;

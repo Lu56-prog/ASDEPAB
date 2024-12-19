@@ -1,5 +1,22 @@
-.cajon-estatuto-general {
-    background-image: url('/src/img/Imagen-fondo-ESTGEN.jpg');
+.tarjeta-p1-hITIPB, .tarjeta-p2-hITIPB{
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    border: 2px solid #dee2e6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    height: 400px;
+}
+
+.subtitle-p1-hitipb, .subtitle-p2-hitipb{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.description-p1-hitipb, .description-p2-hitipb{
+    text-align: justify;
+}
+
+.cajon-historia-ITIPB {
+    background-image: url('/src/img/imagen-fondo-HISITPB.jpg');
     background-color: rgba(248, 249, 250, 0.75); 
     background-size: cover; 
     background-position: center; 
@@ -10,12 +27,12 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.cajon-estatuto-general:hover {
+.cajon-historia-ITIPB:hover {
     transform: scale(1.02); 
     background-color: rgba(248, 249, 250, 0.85); 
 }
 
-.title-estatuto-general {
+.title-historia-ITIPB {
     text-align: center;
     font-weight: 900;
     font-size: 40px;
@@ -24,7 +41,7 @@
     color: #111;
 }
 
-.desciption-estatuto-general {
+.desciption-historia-ITIPB {
     font-weight: 400;
     font-size: 22px;
     line-height: 1.75;
@@ -59,17 +76,16 @@
         padding-bottom: 120px; 
     }
 
-    .cajon-estatuto-general{
+    .cajon-historia-ITIPB{
         width: 100%;
         margin-left: 20px;
-        margin-top: 20%;
     }
 
-    .title-estatuto-general{
-        margin-top: 28%;
+    .title1-historia-ITIPB{
+        margin-top: 25%;
     }
 
-    .desciption-estatuto-general{
+    .desciption-historia-ITIPB{
         text-align: left;
     }
 }
