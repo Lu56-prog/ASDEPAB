@@ -1,21 +1,23 @@
-.cajon-organigrama {
-    background-image: url('/src/img/imagen-fondo-ORG.jpg');
+.cajon-regulacion {
+    background-image: url('/src/img/imagen-fondo-regulacion.jpg');
     background-color: rgba(248, 249, 250, 0.75); 
     background-size: cover; 
-    background-position: center; 
+    background-repeat: no-repeat;
+    background-position: center;
     background-blend-mode: overlay; 
+    width: 100%;
     position: relative; 
     border-radius: 8px;
     border: 2px solid #dee2e6;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.cajon-organigrama:hover {
+.cajon-regulacion:hover {
     transform: scale(1.02); 
     background-color: rgba(248, 249, 250, 0.85); 
 }
 
-.title-organigrama {
+.title-regulacion {
     text-align: center;
     font-weight: 900;
     font-size: 42px;
@@ -24,7 +26,7 @@
     color: #111;
 }
 
-.desciption-organigrama {
+.desciption-regulacion {
     font-weight: 400;
     font-size: 22px;
     line-height: 1.75;
@@ -33,7 +35,7 @@
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
 }
 
-.btnorganigramag {
+.btnestatutog {
     background-color: #1E90FF; 
     color: #fff;
     text-transform: uppercase;
@@ -46,7 +48,7 @@
     transition: all 0.3s ease;
 }
 
-.btnorganigramag:hover {
+.btnestatutog:hover {
     background-color: #0077cc;
 }
 
@@ -59,17 +61,17 @@
         padding-bottom: 120px; 
     }
 
-    .cajon-organigrama{
+    .cajon-regulacion{
         width: 100%;
         margin-left: 20px;
         margin-top: 20%;
     }
 
-    .title-organigrama{
+    .title-regulacion{
         margin-top: 28%;
     }
 
-    .desciption-organigrama{
+    .desciption-regulacion{
         text-align: left;
     }
 }

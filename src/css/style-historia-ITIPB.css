@@ -1,9 +1,16 @@
 .tarjeta-p1-hITIPB, .tarjeta-p2-hITIPB{
-    background-color: #f8f8f8;
     border-radius: 8px;
     border: 2px solid #dee2e6;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     height: 400px;
+}
+
+.tarjeta-p1-hITIPB{
+    background-color: rgb(245, 85, 80);
+}
+
+.tarjeta-p2-hITIPB{
+    background-color: rgb(190, 240, 255);
 }
 
 .subtitle-p1-hitipb, .subtitle-p2-hitipb{
@@ -35,7 +42,7 @@
 .title-historia-ITIPB {
     text-align: center;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 42px;
     margin-top: 10px;
     margin-bottom: -10px;
     color: #111;
