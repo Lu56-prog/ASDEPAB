@@ -25,5 +25,31 @@
 .cuadro-formcontc{
     background-color: rgba(255, 255, 255, 0.85);
     border-radius: 15px;
+}
 
+.btnestatutog {
+    background-color: #1E90FF; 
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btnestatutog:hover {
+    background-color: #0077cc;
+}
+
+/*Validación Formulario*/
+.invalid-feedback{
+    background-color: rgb(245, 85, 80, 0.7);
+    border-radius: 15px;
+    font-weight:700;
+    color: #fff; 
+    line-height: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
 }

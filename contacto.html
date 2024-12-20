@@ -107,7 +107,7 @@
                 <p class="de-contacto">Estamos disponibles para responder tus dudas, sugerencias o cualquier consulta.</p>
             </div>
         </div>
-        <form>
+        <form class="row needs-validation" novalidate>
             <div class="cajon-formulario-contacto bg-white mt-2 py-3 px-4">
                 <div class="row">
                     <div class="col-12">
@@ -116,48 +116,94 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="input-group mb-3">
+                        <div class="input-group has-validation mb-3">
                             <span class="input-group-text cuadro-formcontc"><i class="bi bi-person"></i></span>
-                            <input type="text" class="form-control cuadro-formcontc" id="nombre-egresado-formcontc" placeholder="Nombre Completo"></input>
+                            <input type="text" class="form-control cuadro-formcontc" id="nombre-egresado-formcontc" placeholder="Nombre Completo" required></input>
+                            <div class="invalid-feedback text-center">
+                                Ingresa tu nombre
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="input-group mb-3">
+                        <div class="input-group has-validation mb-3">
                             <span class="input-group-text cuadro-formcontc"><i class="bi bi-envelope-at"></i></span>
-                            <input type="email" class="form-control cuadro-formcontc" id="email-egresado-formcontc" placeholder="Correo Electrónico"></input>
+                            <input type="email" class="form-control cuadro-formcontc" id="email-egresado-formcontc" placeholder="Correo Electrónico" required></input>
+                            <div class="invalid-feedback text-center">
+                                <div id="email-incomplete">
+                                    Ingresa tu correo electronico
+                                </div>
+                                <div id="email-error">
+                                    Ingresa tu correo electronico correctamente
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="input-group mb-3">
+                        <div class="input-group has-validation mb-3">
                             <span class="input-group-text cuadro-formcontc"><i class="bi bi-telephone"></i></span>
-                            <input type="tel" class="form-control cuadro-formcontc" id="email-egresado-formcontc" placeholder="Número de contacto"></input>
+                            <input type="tel" class="form-control cuadro-formcontc" id="email-egresado-formcontc" placeholder="Número de Contacto" required></input>
+                            <div class="invalid-feedback text-center">
+                                Ingresa tu número de contacto
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="input-group mb-3">
+                        <div class="input-group has-validation mb-3">
                             <span class="input-group-text cuadro-formcontc"><i class="bi bi-calendar"></i></span>
-                            <input type="number" class="form-control cuadro-formcontc" id="email-egresado-formcontc" placeholder="Año de Graduación"></input>
+                            <input type="number" class="form-control cuadro-formcontc" id="email-egresado-formcontc" placeholder="Año de Graduación" required></input>
+                            <div class="invalid-feedback text-center">
+                                Ingresa tu año de graduación
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row mb-3">
+                <div class="row has-validation mb-3">
                     <div class="col-12">
                         <div class="input-group">
                             <span class="input-group-text cuadro-formcontc"><i class="bi bi-pencil"></i></span>
-                            <input type="text" class="form-control cuadro-formcontc" id="asunto-egresado-formcontc" placeholder="Asunto"></input>
+                            <input type="text" class="form-control cuadro-formcontc" id="asunto-egresado-formcontc" placeholder="Asunto" required></input>
+                            <div class="invalid-feedback text-center">
+                                Ingresa el asunto de tu mensaje
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row mb-2">
                     <div class="col-12">
-                        <div class="input-group">
+                        <div class="input-group has-validation">
                             <span class="input-group-text cuadro-formcontc"><i class="bi bi-chat"></i></span>
-                            <textarea class="form-control cuadro-formcontc" id="mensaje-egresado-formcontc" placeholder="Mensaje" rows="5"></textarea>
+                            <textarea class="form-control cuadro-formcontc" id="mensaje-egresado-formcontc" placeholder="Mensaje" rows="5" required></textarea>
+                            <div class="invalid-feedback text-center">
+                                Ingresa el mensaje que deseeas enviar
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center text-center">
+                    <div class="col-12 mt-2">
+                        <button type="submit" class="btn btn-primary btnestatutog">Enviar Mensaje</button>
                     </div>
                 </div>
             </div>
         </form>
+
+        <hr class="featurette-divider">
+
+        <div class="cajon-contacto-otros">
+            <div class="row">
+                <div col-12>
+                    <h2 class="subtitle-contacto-otros text-center">También puedes contactarnos a través de:</h2>
+                </div>
+            </div>
+            <div class="cajon-redes-sociales-contacto">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="subtitle-redes">Nuestras Redes Sociales</h2>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     
       <hr class="featurette-divider">
@@ -220,6 +266,7 @@
         crossorigin="anonymous"></script>
     <script src="/src/js/checklogin.js"></script>
     <script src="/src/js/navfixed.js"></script>
+    <script src="script-contacto.js"></script>
 </body>
 
 </html>
