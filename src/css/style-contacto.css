@@ -45,9 +45,13 @@
     background-color: #0077cc;
 }
 
-.cajon-redes-sociales-contacto{
-    background-color: #0077cc;
+.cajon-redes-sociales-contacto, .cajon-correo-electronico-contacto, .cajon-numero-contacto{
+    background-color: rgb(190, 240, 255, 0.7);
     border-radius: 30px;
+}
+
+.cajon-correo-electronico-contacto{
+    margin-bottom: 18px;
 }
 
 .cajon-red-social{
