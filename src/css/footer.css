@@ -1,0 +1,104 @@
+.derechos-autor {
+    color: #505050;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.row a {
+    text-decoration: none;
+    padding-bottom: 20px;
+    transition: color 0.3s;
+    transform: 0.3s;
+}
+
+.container-redes-sociales, .container-ubicacion, .container-email, .container-telf{
+    flex: 1;
+    max-width: 45%;
+    margin-bottom: 10px;
+    color: #505050;
+}
+
+.container-redes-sociales, .container-ubicacion, .container-email {
+    flex: 1;
+    max-width: 45%;
+    margin-bottom: 10px;
+}
+
+.title-redes, .title-ubicacion, .title-email, .title-telf{
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+
+.title-redes, .title-ubicacion, .title-email {
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+
+.facebook{
+    color: #1877F2;
+}
+
+.twitter{
+    color: #111111;
+}
+
+.maps{
+    color: #F44336; 
+}
+
+.instagram{
+    color: #E4405F;;
+}
+
+.gmail {
+    color: #444444;
+}
+
+.facebook:hover {
+    color:  #A0C8F5;
+}
+
+.twitter:hover {
+    color: #666666;
+}
+
+.instagram:hover {
+    color: #F2A9D5
+}
+
+.maps:hover{
+    color: #FFB3B3
+}
+
+.gmail:hover {
+    color: #B3B3B3;
+}
+
+.text-direction, .text-email, .text-telf {
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text-direction svg, .text-email svg, .text-telf svg {
+    vertical-align: top;
+}
+
+@media (max-width: 1025px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #505050;
+    }
+
+    .container-redes-sociales, .container-ubicacion {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
