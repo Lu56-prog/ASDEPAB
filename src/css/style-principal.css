@@ -81,22 +81,22 @@ h1{
 }
 
 .custom-historyPB-description {
-    color: #222222;
+    color: #111;
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
 
-.custom-descriptionB {
-    color: #222222;
+.custom-descriptionB, .subtitule-urltrabajo {
+    color: #111;
     font-weight: 700;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
-.custom-descriptionPB-description {
-    color: #222222;
+.custom-descriptionPB-description, .des-urltrabajo {
+    color: #111;
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
@@ -151,6 +151,10 @@ h1{
 
 .carousel-item {
     height: 80vh;
+}
+
+.cajon_urltrabajo{
+    background-color: rgb(128, 128, 128);
 }
 
 .map-container {

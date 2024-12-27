@@ -12,125 +12,145 @@
     <link rel="stylesheet" href="/src/css/fonts.css">
     <link rel="stylesheet" href="/src/css/footer.css">
     <link rel="stylesheet" href="/src/css/navbar.css">
-    <link rel="stylesheet" href="/src/css/style-mision-vision.css">
+    <link rel="stylesheet" href="/src/css/style-conocenos.css">
     <link rel="icon" href="/src/img/ICONO ASDEPAB.png" type="img/png">
 </head>
 
 <body>
+    <!--NAVBAR-->
     <nav class="navbar navbar-expand-xl navbar-dark" id="navbar">
-        <div class="container-fluid">
-
-            <!-- Logo para escritorio -->
-            <img src="/src/img/ESCUDO1 ITIPB.png" alt="Logo ITIPB" class="pascual-logo logo d-none d-md-block">
-            <img src="/src/img/ESCUDO1 ASDEPAB.png" class="asdepab-logo logo2 d-none d-md-block" alt="Logo ASDEPAB">
-
-            <!-- Logo para móviles -->
-            <img src="/src/img/ESCUDO2 ITIPB.png" alt="Logo ITIPB Móvil" class="pascual-logo logo d-md-none p-mobile">
-            <img src="/src/img/ESCUDO2 ASDEPAB.png" class="asdepab-logo logo2 d-md-none a-mobile"
-                alt="Logo ASDEPAB Móvil">
-
-            <!-- Navbar Toggler -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
-                aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Mobile Profile (shown before navbars on mobile) -->
-            <ul class="navbar-nav profile-mobile d-sm-none">
-                <li class="nav-item dropdown profile">
-                    <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item" id="register-mobile"><a href="/Opciones-registro.html">Registrarse</a></li>
-                        <li class="dropdown-item" id="login-mobile"><a href="/Opciones-registro.html">Iniciar Sesión</a></li>
-                        <li class="dropdown-item" id="logout-mobile"><a href="#" class="logout-btn">Cerrar Sesión</a>
-                        </li>
-                    </ul>
-                </li>
+      <div class="container-fluid">
+  
+        <!-- Logo para escritorio -->
+        <img src="/src/img/ESCUDO1 ITIPB.png" alt="Logo ITIPB" class="pascual-logo logo d-none d-md-block">
+        <img src="/src/img/ESCUDO1 ASDEPAB.png" class="asdepab-logo logo2 d-none d-md-block" alt="Logo ASDEPAB">
+  
+        <!-- Logo para móviles -->
+        <img src="/src/img/ESCUDO2 ITIPB.png" alt="Logo ITIPB Móvil" class="pascual-logo logo d-md-none p-mobile">
+        <img src="/src/img/ESCUDO2 ASDEPAB.png" class="asdepab-logo logo2 d-md-none a-mobile" alt="Logo ASDEPAB Móvil">
+  
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
+          aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Mobile Profile (shown before navbars on mobile) -->
+        <ul class="navbar-nav profile-mobile d-sm-none">
+          <li class="nav-item dropdown profile">
+            <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item" id="register-mobile"><a href="/Opciones-registro.html">Registrarse</a></li>
+              <li class="dropdown-item" id="login-mobile"><a href="/Opciones-registro.html">Iniciar Sesión</a></li>
+              <li class="dropdown-item" id="logout-mobile"><a href="#" class="logout-btn">Cerrar Sesión</a>
+              </li>
             </ul>
-
-            <div class="collapse navbar-collapse" id="navbars">
-                <ul class="navbar-nav me-2 mb-2 mb-sm-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index-principal.html">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">Nosotros</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/conocenos.html">Conocénos</a></li>
-                            <li><a class="dropdown-item" href="/mision-vision.html">Misión y Visión</a></li>
-                            <li><a class="dropdown-item" href="/estatuto-general.html">Estatuto General</a></li>
-                            <li><a class="dropdown-item" href="/organigrama.html">Organigrama</a></li>
-                            <li><a class="dropdown-item" href="/album.html">Album</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ITIPB</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/el_itipb.html">Sobre el ITIPB</a></li>
-                        <li><a class="dropdown-item" href="/historia_itipb.html">Historia</a></li>
-                        <li><a class="dropdown-item" href="/regualaciones_itipb.html">Regulaciones</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">Contactanos</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
-                          <li><a class="dropdown-item" href="afiliacion.html">Afiliación</a></li>
-                          <li><a class="dropdown-item" href="miembros.html">Miembros</a></li>
-                          <li><a class="dropdown-item" href="donaciones.html">Donaciones</a></li>
-                        </ul>
-                    </li>
-            </div>
-
-            <!-- Desktop Profile (shown after navbars on desktop) -->
-            <ul class="navbar-nav profile-desktop d-none d-sm-flex">
-                <li class="nav-item dropdown profile">
-                    <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item" id="register-pc"><a href="/Opciones-registro.html">Registrarse</a></li>
-                        <li class="dropdown-item" id="login-pc"><a href="/Opciones-registro.html">Iniciar Sesión</a></li>
-                        <li class="dropdown-item" id="logout-pc"><a href="#" class="logout-btn">Cerrar Sesión</a></li>
-                    </ul>
-                </li>
-            </ul>
-
+          </li>
+        </ul>
+  
+        <div class="collapse navbar-collapse" id="navbars">
+          <ul class="navbar-nav me-2 mb-2 mb-sm-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index-principal.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="conocenos.html">Conocénos</a></li>
+                <li><a class="dropdown-item" href="mision-vision.html">Misión y Visión</a></li>
+                <li><a class="dropdown-item" href="estatuto-general.html">Estatuto General</a></li>
+                <li><a class="dropdown-item" href="organigrama.html">Organigrama</a></li>
+                <li><a class="dropdown-item" href="album.html">Album</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ITIPB</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="el_itipb.html">Sobre el ITIPB</a></li>
+                <li><a class="dropdown-item" href="historia_itipb.html">Historia</a></li>
+                <li><a class="dropdown-item" href="regualaciones_itipb.html">Regulaciones</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contactanos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                <li><a class="dropdown-item" href="afiliacion.html">Afiliación</a></li>
+                <li><a class="dropdown-item" href="miembros.html">Miembros</a></li>
+                <li><a class="dropdown-item" href="donaciones.html">Donaciones</a></li>
+              </ul>
+            </li>
         </div>
+  
+        <!-- Desktop Profile (shown after navbars on desktop) -->
+        <ul class="navbar-nav profile-desktop d-none d-sm-flex">
+          <li class="nav-item dropdown profile">
+            <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item" id="register-pc"><a href="/Opciones-registro.html">Registrarse</a></li>
+              <li class="dropdown-item" id="login-pc"><a href="/Opciones-registro.html">Iniciar Sesión</a></li>
+              <li class="dropdown-item" id="logout-pc"><a href="#" class="logout-btn">Cerrar Sesión</a></li>
+            </ul>
+          </li>
+        </ul>
+  
+      </div>
     </nav>
 
     <main>
-      <div class="row align-items-md-stretch d-flex justify-content-center text-center">
-        <div class="container-mision-vision">
-          <div class="row mt-3">
-            <h1 class="title-mision-vision">Nuestra Misión y Visión</h1>
-            <h2 class="subtitle-mision-vision">Legado Pascualino: Nuestro Compromiso</h2>
-          </div>
-
-          <div class="container-mn pb-5">
-            <div class="container-mision">
-              <h3 class="subtitle-mision">Misión</h3>
-              <p class="description-mision">
-                La Asociación de Bachilleres Egresados del Instituto Técnico  Industrial Pascual Bravo tiene como misión congregar a los egresados del Instituto Técnico Industrial Pascual Bravo, fomentando un sentido de pertenencia y solidaridad que trascienda generaciones. Impulsamos el desarrollo integral de nuestros miembros, promoviendo la responsabilidad social, el crecimiento profesional y el servicio a la comunidad. Juntos, defendemos la excelencia de la educación técnica y elevamos el prestigio de nuestra institución.
-              </p>
-            </div>
-          
-            <div class="container-vision">
-              <h3 class="subtitle-vision">Visión</h3>
-              <p class="description-vision">
-                La Asociación de Bachilleres Egresados del Instituto Técnico Industrial Pascual Bravo aspira a ser la asociación de egresados más influyente de la región, reconocida por nuestra capacidad de unir a los pascualinos y generar un impacto positivo en la sociedad. Seremos un referente en el ámbito educativo, promoviendo la innovación y el desarrollo sostenible. Nuestra red de egresados será una fuerza impulsora del progreso, fortaleciendo los lazos con el Instituto Técnico Industrial Pascual Bravo y construyendo un futuro mejor para todos.
-              </p>
-            </div>
+      <div class="row d-flex justify-content-center align-items-center text-center">
+        <div class="col-12 mt-2">
+            <h1 class="title-conocenos">Asociación de Egresados del <br> Instituto Técnico Industrial Pascual Bravo</h1>
+            <h2 class="subtitle-conocenos">ASDEPAB</h2>
         </div>
+      </div>
+      <div class="container py-2">
+        <div class="p-5 mb-4 cuadro1-C rounded-3">
+          <div class="container-fluid py-2">
+            <div class="row">
+              <div class="col-md-7 md-5">
+                <h2 class="subtitle-QS">¿Quiénes Somos?</h2>
+                <p class="desceription-1">
+                  Somos una comunidad vibrante y dinámica de Pascualinos apasionados, unidos por el orgullo de pertenecer al Instituto Técnico Industrial Pascual Bravo. Nuestra comunidad ofrece un espacio donde conectar, compartir experiencias y oportunidades, y crecer profesionalmente.  Al unirte a nuestra asociación, formarás parte de una red de apoyo que te acompañará en tu trayectoria profesional y personal, impulsándote a alcanzar tus metas más ambiciosas.
+                </p>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center cuadro-imagen1">
+                <img class="img-escudo-ASDEPAB" src="/src/img/ESCUDO-ASDEPAB-GRANDE.png" alt="Escudo ASDEPAB">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row align-items-md-stretch mb-4">
+          <div class="col-md-6">
+            <div class="h-100 p-5 cuadro2-C rounded-3">
+              <p class="desceription-2">Nos esforzamos por fortalecer los lazos entre los egresados y crear redes de apoyo mutuo que nos impulsen a crecer juntos. Después de recibir nuestra formación como bachilleres, llevamos con orgullo ante la sociedad el nombre del Pascual Bravo, destacando no solo por nuestras habilidades técnicas y valores, sino también por la huella que dejamos en cada proyecto y sueño que emprendemos. Nos motivamos a seguir adelante, dejando marca en todo lo que realizamos.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="h-100 p-5 cuadro3-C border rounded-3">
+              <p class="desceription-3">Somos una gran familia, la familia Pascualina. En este espacio compartimos conocimientos, experiencias y pasiones, con la ingeniería, la tecnología y el aprendizaje como nuestros pilares esenciales. Cada día reafirmamos nuestro compromiso de honrar el legado de excelencia, dedicación y esfuerzo que define al Instituto Técnico Industrial Pascual Bravo, valorando nuestras raíces y trabajando juntos por un futuro lleno de posibilidades y logros compartidos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-12">
+              <div class="cuadro-imagen2 p-4 d-flex justify-content-center align-items-center">
+                  <img class="imagen2-antigua" src="/src/img/imagen-bloque1-antigua.jpeg" alt="Imagen Generaciónes Antiguas">
+                </div>
+          </div>
         </div>
       </div>
     </main>
 
-    <hr class="featurette-divider">
+      <hr class="featurette-divider">
    <!-- FOOTER -->
    <footer class="container">
     <p class="derechos-autor">&copy; 2024 ASOCIACIÓN DE EGRESADOS DEL INSTITUTO TÉCNICO INDUSTRIAL PASCUAL BRAVO</p>
@@ -190,7 +210,7 @@
         </div>
     </div>
   </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

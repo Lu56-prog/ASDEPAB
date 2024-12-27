@@ -12,117 +12,98 @@
     <link rel="stylesheet" href="/src/css/fonts.css">
     <link rel="stylesheet" href="/src/css/footer.css">
     <link rel="stylesheet" href="/src/css/navbar.css">
-    <link rel="stylesheet" href="/src/css/style-organigrama.css">
+    <link rel="stylesheet" href="/src/css/navstyle-estatuto.general.css">
     <link rel="icon" href="/src/img/ICONO ASDEPAB.png" type="img/png">
 </head>
 
 <body>
+    <!--NAVBAR-->
     <nav class="navbar navbar-expand-xl navbar-dark" id="navbar">
         <div class="container-fluid">
-
-            <!-- Logo para escritorio -->
-            <img src="/src/img/ESCUDO1 ITIPB.png" alt="Logo ITIPB" class="pascual-logo logo d-none d-md-block">
-            <img src="/src/img/ESCUDO1 ASDEPAB.png" class="asdepab-logo logo2 d-none d-md-block" alt="Logo ASDEPAB">
-
-            <!-- Logo para móviles -->
-            <img src="/src/img/ESCUDO2 ITIPB.png" alt="Logo ITIPB Móvil" class="pascual-logo logo d-md-none p-mobile">
-            <img src="/src/img/ESCUDO2 ASDEPAB.png" class="asdepab-logo logo2 d-md-none a-mobile"
-                alt="Logo ASDEPAB Móvil">
-
-            <!-- Navbar Toggler -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
-                aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Mobile Profile (shown before navbars on mobile) -->
-            <ul class="navbar-nav profile-mobile d-sm-none">
-                <li class="nav-item dropdown profile">
-                    <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item" id="register-mobile"><a href="/Opciones-registro.html">Registrarse</a></li>
-                        <li class="dropdown-item" id="login-mobile"><a href="/Opciones-registro.html">Iniciar Sesión</a></li>
-                        <li class="dropdown-item" id="logout-mobile"><a href="#" class="logout-btn">Cerrar Sesión</a>
-                        </li>
-                    </ul>
+    
+          <!-- Logo para escritorio -->
+          <img src="/src/img/ESCUDO1 ITIPB.png" alt="Logo ITIPB" class="pascual-logo logo d-none d-md-block">
+          <img src="/src/img/ESCUDO1 ASDEPAB.png" class="asdepab-logo logo2 d-none d-md-block" alt="Logo ASDEPAB">
+    
+          <!-- Logo para móviles -->
+          <img src="/src/img/ESCUDO2 ITIPB.png" alt="Logo ITIPB Móvil" class="pascual-logo logo d-md-none p-mobile">
+          <img src="/src/img/ESCUDO2 ASDEPAB.png" class="asdepab-logo logo2 d-md-none a-mobile" alt="Logo ASDEPAB Móvil">
+    
+          <!-- Navbar Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
+            aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Mobile Profile (shown before navbars on mobile) -->
+          <ul class="navbar-nav profile-mobile d-sm-none">
+            <li class="nav-item dropdown profile">
+              <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item" id="register-mobile"><a href="/Opciones-registro.html">Registrarse</a></li>
+                <li class="dropdown-item" id="login-mobile"><a href="/Opciones-registro.html">Iniciar Sesión</a></li>
+                <li class="dropdown-item" id="logout-mobile"><a href="#" class="logout-btn">Cerrar Sesión</a>
                 </li>
-            </ul>
-
-            <div class="collapse navbar-collapse" id="navbars">
-                <ul class="navbar-nav me-2 mb-2 mb-sm-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index-principal.html">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">Nosotros</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/conocenos.html">Conocénos</a></li>
-                            <li><a class="dropdown-item" href="/mision-vision.html">Misión y Visión</a></li>
-                            <li><a class="dropdown-item" href="/estatuto-general.html">Estatuto General</a></li>
-                            <li><a class="dropdown-item" href="/organigrama.html">Organigrama</a></li>
-                            <li><a class="dropdown-item" href="/album.html">Album</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ITIPB</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="/el_itipb.html">Sobre el ITIPB</a></li>
-                          <li><a class="dropdown-item" href="/historia_itipb.html">Historia</a></li>
-                          <li><a class="dropdown-item" href="/regualaciones_itipb.html">Regulaciones</a></li>
-                        </ul>
-                      </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">Contactanos</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
-                          <li><a class="dropdown-item" href="afiliacion.html">Afiliación</a></li>
-                          <li><a class="dropdown-item" href="miembros.html">Miembros</a></li>
-                          <li><a class="dropdown-item" href="donaciones.html">Donaciones</a></li>
-                        </ul>
-                    </li>
-            </div>
-
-            <!-- Desktop Profile (shown after navbars on desktop) -->
-            <ul class="navbar-nav profile-desktop d-none d-sm-flex">
-                <li class="nav-item dropdown profile">
-                    <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item" id="register-pc"><a href="/Opciones-registrohtml">Registrarse</a></li>
-                        <li class="dropdown-item" id="login-pc"><a href="/Opciones-registrohtml">Iniciar Sesión</a></li>
-                        <li class="dropdown-item" id="logout-pc"><a href="#" class="logout-btn">Cerrar Sesión</a></li>
-                    </ul>
-                </li>
-            </ul>
-
+              </ul>
+            </li>
+          </ul>
+    
+          <div class="collapse navbar-collapse" id="navbars">
+            <ul class="navbar-nav me-2 mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index-principal.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="conocenos.html">Conocénos</a></li>
+                  <li><a class="dropdown-item" href="mision-vision.html">Misión y Visión</a></li>
+                  <li><a class="dropdown-item" href="estatuto-general.html">Estatuto General</a></li>
+                  <li><a class="dropdown-item" href="organigrama.html">Organigrama</a></li>
+                  <li><a class="dropdown-item" href="album.html">Album</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ITIPB</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="el_itipb.html">Sobre el ITIPB</a></li>
+                  <li><a class="dropdown-item" href="historia_itipb.html">Historia</a></li>
+                  <li><a class="dropdown-item" href="regualaciones_itipb.html">Regulaciones</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contactanos</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                  <li><a class="dropdown-item" href="afiliacion.html">Afiliación</a></li>
+                  <li><a class="dropdown-item" href="miembros.html">Miembros</a></li>
+                  <li><a class="dropdown-item" href="donaciones.html">Donaciones</a></li>
+                </ul>
+              </li>
+          </div>
+    
+          <!-- Desktop Profile (shown after navbars on desktop) -->
+          <ul class="navbar-nav profile-desktop d-none d-sm-flex">
+            <li class="nav-item dropdown profile">
+              <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item" id="register-pc"><a href="/Opciones-registro.html">Registrarse</a></li>
+                <li class="dropdown-item" id="login-pc"><a href="/Opciones-registro.html">Iniciar Sesión</a></li>
+                <li class="dropdown-item" id="logout-pc"><a href="#" class="logout-btn">Cerrar Sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+    
         </div>
-    </nav>
+      </nav>
 
     <main class="container">
-      <div class="row align-items-md-stretch">
-        <div class="col-12 mt-5">
-          <div class="h-100 p-5 cajon-organigrama">
-            <h1 class="title-organigrama pb-4">Organigrama</h1>
-            <div class="desciption-organigrama">
-              <p >
-                Este apartado presenta la Estructura Organizacional del Instituto Técnico Industrial Pascual Bravo, mostrando la jerarquía de la institución, desde el concejo directivo hasta los departamentos y oficinas. Te permitirá conocer las áreas clave y los responsables de cada sector, brindando una visión clara de cómo se distribuyen las funciones dentro de la institución.
-              </p>
-            </div>
-            <div class="d-flex justify-content-center pt-2 text-center">
-              <a href="src/css/Documentos/ORGANIGRAMA ASDEPAB.pdf" target="_blank" class="btnorganigramag">
-                Ver Organigrama
-              </a>
-          </div>
-          </div>
-        </div>
-      </div>
     </main>
-
+    
       <hr class="featurette-divider">
    <!-- FOOTER -->
    <footer class="container">
