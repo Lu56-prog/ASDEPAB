@@ -1,0 +1,62 @@
+.info-section {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px;
+    margin: 50px 30px 50px 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.info-section h2 {
+    font-size: 2.3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: rgb(52, 58, 64);
+}
+
+.info-section p {
+    font-size: 1.2rem;
+    color: rgb(98, 105, 112);
+}
+
+.cajon-opciones{
+    background-image: url(/src/img/fondo-urltrabajo.jpg);
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px;
+    margin: 50px 30px 50px 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Opciones{
+    margin: 30px 15px 30px 15px;
+}
+
+.cajon-egresados, .cajon-empresa {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: rgb(255, 255, 255);
+}
+
+.title-Opciones{
+    font-weight: 900;
+}
+
+
+.btnOpciones {
+    background-color: #8A8A8A; 
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btnOpciones:hover {
+    background-color: #595959;
+}
+

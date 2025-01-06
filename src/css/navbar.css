@@ -9,6 +9,10 @@
     width: 100%;
 }
 
+.navbar-trabajo > .container-fluid {
+    background-color: rgb(200, 200, 200);
+}
+
 .navbar-nav .dropdown-menu {
     z-index: 1100;
 }
@@ -81,11 +85,7 @@
     width: 100%;
 }
 
-.asdepab-logo {
-    width: 250px;
-}
-
-.pascual-logo {
+.asdepab-logo, .pascual-logo, .PBPR-logo {
     width: 250px;
 }
 
