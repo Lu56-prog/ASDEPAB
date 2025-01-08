@@ -56,6 +56,21 @@
     transition: all 0.3s ease;
 }
 
+.placeholder-form2::placeholder {
+    transform: translateY(-90%); 
+}
+
+/*Validación Formulario*/
+.invalid-feedback{
+    background-color: rgb(245, 85, 80, 0.7);
+    border-radius: 15px;
+    font-weight:700;
+    color: #fff; 
+    line-height: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+
 @media (max-width: 1028px){
     .cajon-form1-eg{
         margin: 10px 30px 30px 30px;;

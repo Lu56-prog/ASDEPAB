@@ -69,35 +69,32 @@
                 </div>
             </div>
             
-            <form>
+            <form class="needs-validation" novalidate>
                 <div class="cajon-form1-eg">
                     <div class="row">
-                        <div class="col-md-4">
-                            <input type="text" class="form-control info-form1" id="perfil-egresado-form2" placeholder="Perfil Profesional  o Ocupación" required></input>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control info-form1" id="perfil-egresado-form2" placeholder="Ingresa tu perfil profesional o ocupación" required></input>
                             <div class="invalid-feedback text-center">
-                                Nombre Completo
+                                Ingrese la ocupación en la que te desempeñas
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <input type="number" class="form-control info-form1" id="añosexperiencia-egresado-form2" placeholder="Años de Experiencia" required></input>
+                        <div class="col-md-6">
+                            <input type="number" class="form-control info-form1" id="añosexperiencia-egresado-form2" placeholder="Ingresa el número de años de experiencia laboral" required></input>
                             <div class="invalid-feedback text-center">
-                                Edad
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="number" class="form-control info-form1" id="salario-egresado-form2" placeholder="Aspiración Salarial (Opcional)"></input>
-                            <div class="invalid-feedback text-center">
-                                Número de Identificación
+                                Indica el número total de años de experiencia laboral
                             </div>
                         </div>
                     </div>
 
                     <div class="row mt-4 d-flex align-items-stretch">
                         <div class="col-md-6">
+                            <textarea class="form-control info-form1 des-form1" id="salario-egresado-form2" placeholder="Ingresa el rango salarial que esperas recibir por ejemplo: $2,000,000 - $3,000,000 (Opcional)"></textarea>
+                        </div>
+                        <div class="col-md-6">
                             <div class="cajon-infoform1">
-                                <label class="form-label label-form1 mb-0 mt-0 px-3 pt-2 pb-1">Nivel de Estudio</label>
+                                <label class="form-label label-form1 mb-0 mt-0 px-3 pt-2 pb-1">Selecciona tu nivel de estudio</label>
                                 <select class="form-select info-form1" id="nivelestudios-egresado-form2" required>
-                                    <option selected>Selecciona</option>
+                                    <option selected disabled value="">Selecciona</option>
                                     <option value="primaria">Primaria</option>
                                     <option value="secundaria">Secundaria</option>
                                     <option value="tecnico">Técnico</option>
@@ -107,23 +104,48 @@
                                     <option value="maestria">Maestría</option>
                                     <option value="doctorado">Doctorado</option>
                                   </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <textarea class="form-control info-form1 des-form1" id="estudios-egresado-form2" placeholder="Programas Académicos" required></textarea>
-                            <div class="invalid-feedback text-center">
-                                Número Celular
+                                  <div class="invalid-feedback text-center">
+                                    Seleccione su nivel de estudio
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="row mt-4">
                         <div class="col-12">
-                            <textarea class="form-control info-form1 des2-form1" id="estudios-egresado-form2" placeholder="Experiencia Laboral" required></textarea>
+                            <textarea class="form-control info-form1 des2-form1" id="estudios-egresado-form2" placeholder="Ingresa los programas académicos cursados, indicando nombre de programa e institución" required></textarea>
                             <div class="invalid-feedback text-center">
-                                Número Celular
+                                Ingrese sus programas académicos junto todos los requisitos
                             </div>
                         </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <textarea class="form-control info-form1 des2-form1" id="experiencia-egresado-form2" placeholder="Detalla tus experiencias laborales anterirores, incluyendo nombre de la empresa, cargo y tiempo que trabajaste en cada lugar, si no tienes experiencia laboral por favor escriba: 'Sin experiencia laboral' " required></textarea>
+                            <div class="invalid-feedback text-center">
+                                Ingrese sus experiencias laborales junto todos los requisitos si no tienes experiencia laboral por favor escriba: "Sin experiencia laboral"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mt-4">
+                            <div class="cajon-infoform1">
+                                <label class="form-label label-form1 mb-0 pt-2 px-3 pb-1">Carga tu hoja de vida en formato PDF o Word</label>
+                                <input class="form-control info-form1" type="file" id="hojadevida-egresado-form2" accept=".pdf,.doc,.docx" required>
+                                <div class="invalid-feedback text-center">
+                                    Es muy importante que compartas tu hoja de vida
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 mt-4">
+                            <div class="cajon-infoform1">
+                                <label class="form-label label-form1 mb-0 pt-2 px-3 pb-1">Carga una foto tuya formato tipo documento (Opcional)</label>
+                                <input class="form-control info-form1" type="file" id="imagen-egresado-form2" accept="image/png, image/jpeg, image/jpg">
+                            </div>
+                          </div>
                     </div>
 
                     <div class="row d-flex justify-content-center align-items-center text-center">
@@ -205,7 +227,7 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
   <script src="/src/js/checklogin.js"></script>
-  <script src="/src/js/navfixed.js"></script>
+  <script src="/script-form1.js"></script>
 </body>
 
 </html>

@@ -69,46 +69,46 @@
                 </div>
             </div>
             
-            <form>
+            <form class="needs-validation" novalidate>
                 <div class="cajon-form1-eg">
                     <div class="row">
                         <div class="col-md-4">
-                            <input type="text" class="form-control info-form1" id="nombre-egresado-form1" placeholder="Nombre Completo" required></input>
+                            <input type="text" class="form-control info-form1" id="nombre-egresado-form1" placeholder="Ingrese su nombre completo" required></input>
                             <div class="invalid-feedback text-center">
-                                Nombre Completo
+                                Ingrese su nombre completo
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="number" class="form-control info-form1" id="identificacion-egresado-form1" placeholder="Ingrese su número de identificación" required></input>
+                            <div class="invalid-feedback text-center">
+                                Ingrese su número de identificación
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <input type="number" class="form-control info-form1" id="identificacion-egresado-form1" placeholder="Número de Identificación" required></input>
+                            <input type="number" class="form-control info-form1" id="edad-egresado-form1" placeholder="Ingrese su edad" required></input>
                             <div class="invalid-feedback text-center">
-                                Número de Identificación
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <input type="number" class="form-control info-form1" id="edad-egresado-form1" placeholder="Edad" required></input>
-                            <div class="invalid-feedback text-center">
-                                Edad
+                                Ingrese su edad
                             </div>
                         </div>
                     </div>
 
                     <div class="row mt-4">
                         <div class="col-md-4">
-                            <input type="text" class="form-control info-form1" id="telefono-egresado-form1" placeholder="Número de Contacto" required></input>
+                            <input type="text" class="form-control info-form1" id="telefono-egresado-form1" placeholder="Ingresa un número de contacto valido" required></input>
                             <div class="invalid-feedback text-center">
-                                Número de Contacto
+                                Ingresa  un número de contacto
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <input type="email" class="form-control info-form1" id="correo-egresado-form1" placeholder="Correo Electronico" required></input>
+                            <input type="email" class="form-control info-form1" id="correo-egresado-form1" placeholder="Ingresa tu correo electronico" required></input>
                             <div class="invalid-feedback text-center">
-                                Número Celular
+                                Ingrese su correo electrónico correctamente, asegurándote de incluir el símbolo '@' y el dominio
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" class="form-control info-form1" id="direccion-egresado-form1" placeholder="Dirección" required></input>
+                            <input type="text" class="form-control info-form1" id="direccion-egresado-form1" placeholder="Ingresa tu dirección" required></input>
                             <div class="invalid-feedback text-center">
-                                Dirección
+                                Ingresa tu dirección
                             </div>
                         </div>
                     </div>
@@ -116,20 +116,25 @@
                     <div class="row mt-4">
                             <div class="col-md-6">
                                 <div class="cajon-infoform1">
-                                    <label class="form-label label-form1 mb-0 pt-2 px-3 pb-1">Fecha de Nacimiento</label>
-                                    <input type="date" class="form-control info-form1" id="fechanacimiento-egresado-form1"></input>
-                                    <div class="invalid-feedback text-center">Fecha de Nacimiento</div>
+                                    <label class="form-label label-form1 mb-0 pt-2 px-3 pb-1">Seleccione su fecha de nacimiento</label>
+                                    <input type="date" class="form-control info-form1" id="fechanacimiento-egresado-form1" required></input>
+                                    <div class="invalid-feedback text-center">
+                                        Seleccione su fecha de nacimiento
+                                    </div>
                                 </div>
                             </div>
                         <div class="col-md-6">
                             <div class="cajon-infoform1">
-                                <label class="form-label label-form1 mb-0 mt-0 px-3 pt-2 pb-1">Género</label>
+                                <label class="form-label label-form1 mb-0 mt-0 px-3 pt-2 pb-1">Selecciona tu género</label>
                                 <select class="form-select info-form1" id="genero-egresado-form1" required>
-                                    <option selected>Selecciona</option>
+                                    <option selected disabled value="">Selecciona</option>
                                     <option value="masculino">Masculino</option>
                                     <option value="femenino">Femenino</option>
                                     <option value="otro">Otro</option>
-                                  </select>
+                                </select>
+                                <div class="invalid-feedback text-center">
+                                    Seleccione su género
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -213,7 +218,7 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
   <script src="/src/js/checklogin.js"></script>
-  <script src="/src/js/navfixed.js"></script>
+  <script src="/script-form1.js"></script>
 </body>
 
 </html>
