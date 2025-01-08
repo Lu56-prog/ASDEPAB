@@ -17,8 +17,19 @@
     background-color: rgb(255, 255, 255);
 }
 
+.title-opciones{
+    font-weight: 900;
+    font-size: 42px;
+    color: #111;
+}
+
 .title-opcion{
     font-weight: 700;
+}
+
+.description-option{
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .btnOpciones {
@@ -37,4 +48,23 @@
 
 .btnOpciones:hover {
     background-color: #595959;
+}
+
+@media (max-width: 1028px) {
+    .cajon-title{
+        margin-top: 100px;
+    }
+
+    .cajon-opciones-egresados, .cajon-opciones-empresas{
+        padding: 5px;
+    }
+
+    .opciones{
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .opcion{
+        margin-top: 20px;
+    }
 }

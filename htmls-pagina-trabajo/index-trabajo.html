@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/src/css/fonts.css">
     <link rel="stylesheet" href="/src/css/footer.css">
     <link rel="stylesheet" href="/src/css/navbar.css">
-    <link rel="icon" href="../src/img/ESCUDO2 ASDEPAB.png" type="img/png">
+    <link rel="icon" href="/src/img/ESCUDO2 ASDEPAB.png" type="img/png">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
             <!-- Logo para móviles -->
             <img src="/src/img/ESCUDO2 ITIPB.png" alt="Logo ITIPB Móvil" class="pascual-logo logo d-md-none p-mobile">
             <img src="/src/img/ESCUDO2 ASDEPAB.png" class="asdepab-logo logo2 d-md-none a-mobile" alt="Logo ASDEPAB Móvil">
-            <img src="/src/img/ESCUDO PBPR.png" class="PBPR-logo logo2 d-md-none a-mobile" alt="Logo Pascual Bravo Pro Red Móvil">
+            <img src="/src/img/ESCUDO PBPR2.png" class="PBPR-logo logo2 d-md-none a-mobile" alt="Logo Pascual Bravo Pro Red Móvil">
 
             <!-- Navbar Toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
@@ -42,10 +42,10 @@
                         <a class="nav-link" href="index-trabajo.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="opciones-egresado.html">Egresado</a>
+                        <a class="nav-link" href="/htmls-pagina-trabajo/Egresado/opciones-egresado.html">Egresado</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="opciones-empresa.html">Empresa</a>
+                        <a class="nav-link" href="/htmls-pagina-trabajo/Empresa/opciones-empresa.html">Empresa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Ayuda</a>
@@ -115,14 +115,15 @@
         </section>
 
         <section>
-            <div class="cajon-opciones">
+            <!--PC-->
+            <div class="cajon-opciones d-none d-md-block">
                 <div class="row align-items-md-stretch Opciones">
                     <div class="col-md-6">
-                      <div class="h-100 px-5 py-4 cajon-egresados rounded-3 ">
+                      <div class="h-100 px-5 py-4 cajon-egresados rounded-3">
                         <h2 class="title-Opciones text-center mb-2">Egresado Pascualino</h2>
-                        <p class="custom-historyPB-description">Como egresado, podrás publicar tus solicitudes de empleo, facilitando que las empresas te conozcan y contacten directamente. Además, tendrás la oportunidad de explorar las ofertas disponibles que se ajusten a tu perfil y aspiraciones profesionales.</p>
+                        <p class="des-opciones">Como egresado Pascualino, podrás publicar tus solicitudes de empleo para que las empresas te conozcan, contacten directamente, además de explorar ofertas que se adapten a tu perfil y aspiraciones profesionales.</p>
                         <div class="d-flex justify-content-center align-items-center pt-2 pb-3">
-                            <a href="opciones-egresado.html" class="btnOpciones">
+                            <a href="/htmls-pagina-trabajo/Egresado/opciones-egresado.html" class="btnOpciones">
                               SOY EGRESADO
                             </a>
                         </div>
@@ -131,10 +132,38 @@
                     <div class="col-md-6">
                       <div class="h-100 px-5 py-4 cajon-empresa rounded-3">
                         <h2 class="title-Opciones text-center mb-2">Empresa</h2>
-                        <p class="custom-descriptionPB-description">Como empresa, podrás publicar ofertas de trabajo dirigidas a egresados Pascualinos capacitados, promoviendo la conexión con talento. Además, podrás revisar las solicitudes y evaluar los perfiles, seleccionando los mejores candidatos..</p>
+                        <p class="des-opciones">Como empresa, podrás publicar ofertas de trabajo dirigidas a egresados Pascualinos capacitados, promoviendo la conexión con talento. Además, podrás revisar las solicitudes y evaluar los perfiles, seleccionando los mejores candidatos.</p>
                         <div class="d-flex justify-content-center align-items-center pt-2 pb-3">
-                            <a href="opciones-empresa.html" class="btnOpciones">
+                            <a href="/htmls-pagina-trabajo/Empresa/opciones-empresa.html" class="btnOpciones">
                               SOY EMPRESA
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!--Movil-->
+            <div class="cajon-opciones d-block d-md-none">
+                <div class="row align-items-md-stretch Opciones">
+                    <div class="col-md-6">
+                      <div class="h-100 p-4 cajon-egresados rounded-3">
+                        <h2 class="title-Opciones text-center mb-2">Egresado <br> Pascualino</h2>
+                        <p class="des-opciones">Publica tus solicitudes de empleo y conecta con empresas mientras exploras ofertas acordes a tu perfil profesional.</p>
+                        <div class="d-flex justify-content-center align-items-center pt-2 pb-3">
+                            <a href="/htmls-pagina-trabajo/Egresado/opciones-egresado.html" class="btnOpciones">
+                              EGRESADO
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="h-100 p-4 cajon-empresa rounded-3">
+                        <h2 class="title-Opciones text-center mb-2">Empresa</h2>
+                        <p class="des-opciones">Publica ofertas de empleo, conecta con talento Pascualino y selecciona los mejores candidatos para tu empresa.</p>
+                        <div class="d-flex justify-content-center align-items-center pt-2 pb-3">
+                            <a href="/htmls-pagina-trabajo/Empresa/opciones-empresa.html" class="btnOpciones">
+                              EMPRESA
                             </a>
                         </div>
                       </div>

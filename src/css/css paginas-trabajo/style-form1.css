@@ -1,0 +1,71 @@
+.cajon-form1-eg{
+    background-image: url(/src/img/fondo-urltrabajo.jpg);
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px;
+    margin: 10px 60px 30px 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.title-p1 {
+    font-weight: 900;
+    font-size: 40px;
+    color: #111;
+}
+
+.subtitle-p1 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #111;
+}
+
+.cajon-infoform1{
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+}
+
+.info-form1 {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+}
+
+.des-form1{
+    height: 100%;
+}
+
+.des2-form1{
+    height: 150px;
+}
+
+.label-form1{
+    font-size: 18px;
+    color: rgb(86, 91, 97);
+}
+
+.btn-form1{
+    background-color: #1E90FF; 
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 1028px){
+    .cajon-form1-eg{
+        margin: 10px 30px 30px 30px;;
+    }
+
+    .cajon-title {
+        margin-top: 100px;
+    }
+
+    .info-form1, .cajon-infoform1{
+        margin-bottom: 10px;
+    }
+}

@@ -29,7 +29,7 @@
 }
 
 .Opciones{
-    margin: 30px 15px 30px 15px;
+    margin: 35px 15px 30px 15px;
 }
 
 .cajon-egresados, .cajon-empresa {
@@ -39,6 +39,12 @@
 
 .title-Opciones{
     font-weight: 900;
+}
+
+.des-opciones{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
 }
 
 
@@ -60,3 +66,16 @@
     background-color: #595959;
 }
 
+@media (max-width: 1028px) {
+    .Opciones{
+        margin: 10px;
+    }
+
+    .cajon-opciones{
+        padding: 10px;
+    }
+
+    .cajon-egresados{
+        margin-bottom: 20px;
+    }
+}
