@@ -1,0 +1,48 @@
+.cajon-laboral{
+    background-image: url(/src/img/fondo-urltrabajo.jpg);
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px;
+    margin: 10px 30px 50px 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.title-p1 {
+    font-weight: 900;
+    font-size: 40px;
+    color: #111;
+}
+
+.subtitle-p1 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #111;
+}
+
+.item-1 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #111;
+}
+
+.item-2{
+    font-size: 18px;
+}
+
+.item-3{
+    font-size: 16px;
+}
+
+.item-4{
+    font-size: 14px;
+}
+
+.cajon-solicitud, .cajon-oferta {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: rgba(255, 255, 255, 0.82);
+}
+
+.cajon-solicitud:hover, .cajon-oferta :hover {
+    transform: scale(1.03); 
+}

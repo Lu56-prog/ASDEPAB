@@ -65,7 +65,7 @@
             <div class="row cajon-title">
                 <div class="col-12 text-center mt-2">
                     <h1 class="title-p1 mb-0">Publicar Solicitud Laboral Como Pascualino</h1>
-                    <h2 class="subtitle-p1">Ingresa tu Información Personal</h2>
+                    <h2 class="subtitle-p1">Ingreses su Información Personal</h2>
                 </div>
             </div>
             
@@ -75,28 +75,36 @@
                         <div class="col-md-4">
                             <input type="text" class="form-control info-form1" id="nombre-egresado-form1" placeholder="Ingrese su nombre completo" required></input>
                             <div class="invalid-feedback text-center">
-                                Ingrese su nombre completo
+                                ¿Cuál es su nombre completo?
                               </div>
                         </div>
                         <div class="col-md-4">
-                            <input type="number" class="form-control info-form1" id="identificacion-egresado-form1" placeholder="Ingrese su número de identificación" required></input>
-                            <div class="invalid-feedback text-center">
-                                Ingrese su número de identificación
+                            <div class="input-group has-validation select-document">
+                                <select class="form-select info-form1" id="tipodocumento-egresado-form1" required>
+                                    <option class="opcion" selected disabled value="">ID</option>
+                                    <option class="opcion" value="cedula">C.C</option>
+                                    <option class="opcion" value="tarjeta-identidad">T.I</option>
+                                    <option class="opcion" value="cedula-extranjero">C.E</option>
+                                </select>
+                                <input type="number" class="form-control info-form1" id="identificacion-egresado-form1" placeholder="Su número de identificación" required></input>
+                                <div class="invalid-feedback text-center">
+                                    ¿Cuál es su número de identificación?
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <input type="number" class="form-control info-form1" id="edad-egresado-form1" placeholder="Ingrese su edad" required></input>
                             <div class="invalid-feedback text-center">
-                                Ingrese su edad
+                                ¿Cuál es su edad?
                             </div>
                         </div>
                     </div>
 
                     <div class="row mt-4">
                         <div class="col-md-4">
-                            <input type="text" class="form-control info-form1" id="telefono-egresado-form1" placeholder="Ingresa un número de contacto valido" required></input>
+                            <input type="number" class="form-control info-form1" id="telefono-egresado-form1" placeholder="Ingresa un número de contacto valido" required></input>
                             <div class="invalid-feedback text-center">
-                                Ingresa  un número de contacto
+                                ¿Cuál es su número de contacto?
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -108,7 +116,7 @@
                         <div class="col-md-4">
                             <input type="text" class="form-control info-form1" id="direccion-egresado-form1" placeholder="Ingresa tu dirección" required></input>
                             <div class="invalid-feedback text-center">
-                                Ingresa tu dirección
+                                ¿Cuál es su dirección?
                             </div>
                         </div>
                     </div>
@@ -119,7 +127,7 @@
                                     <label class="form-label label-form1 mb-0 pt-2 px-3 pb-1">Seleccione su fecha de nacimiento</label>
                                     <input type="date" class="form-control info-form1" id="fechanacimiento-egresado-form1" required></input>
                                     <div class="invalid-feedback text-center">
-                                        Seleccione su fecha de nacimiento
+                                        ¿Cuál es su fecha de nacimiento?
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +141,7 @@
                                     <option value="otro">Otro</option>
                                 </select>
                                 <div class="invalid-feedback text-center">
-                                    Seleccione su género
+                                    ¿Cuál es su género?
                                 </div>
                             </div>
                         </div>
@@ -219,6 +227,7 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
   <script src="/src/js/checklogin.js"></script>
+  <script src="/src/js/navfixed.js"></script>
   <script src="/script-form1.js"></script>
 </body>
 

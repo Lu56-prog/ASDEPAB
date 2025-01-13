@@ -65,7 +65,7 @@
             <div class="row cajon-title">
                 <div class="col-12 text-center mt-2">
                     <h1 class="title-p1 mb-0">Publicar Solicitud Laboral Como Pascualino</h1>
-                    <h2 class="subtitle-p1">Ingresa tu Información Profesional</h2>
+                    <h2 class="subtitle-p1">Ingrese su Información Profesional</h2>
                 </div>
             </div>
             
@@ -75,13 +75,13 @@
                         <div class="col-md-6">
                             <input type="text" class="form-control info-form1" id="perfil-egresado-form2" placeholder="Ingresa tu perfil profesional o ocupación" required></input>
                             <div class="invalid-feedback text-center">
-                                Ingrese la ocupación en la que te desempeñas
+                                ¿Cuál es la ocupación en que te desempeñas?
                             </div>
                         </div>
                         <div class="col-md-6">
                             <input type="number" class="form-control info-form1" id="añosexperiencia-egresado-form2" placeholder="Ingresa el número de años de experiencia laboral" required></input>
                             <div class="invalid-feedback text-center">
-                                Indica el número total de años de experiencia laboral
+                                ¿Cuántos años de experiencia laboral tienes?
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                                     <option value="doctorado">Doctorado</option>
                                   </select>
                                   <div class="invalid-feedback text-center">
-                                    Seleccione su nivel de estudio
+                                    ¿Cuál es su nivel de estudio?
                                 </div>
                             </div>
                         </div>
@@ -115,7 +115,7 @@
                         <div class="col-12">
                             <textarea class="form-control info-form1 des2-form1" id="estudios-egresado-form2" placeholder="Ingresa los programas académicos cursados, indicando nombre de programa e institución" required></textarea>
                             <div class="invalid-feedback text-center">
-                                Ingrese sus programas académicos junto todos los requisitos
+                                Ingrese los programas académicos realizados junto todos los requisitos
                             </div>
                         </div>
                     </div>
@@ -146,6 +146,27 @@
                                 <input class="form-control info-form1" type="file" id="imagen-egresado-form2" accept="image/png, image/jpeg, image/jpg">
                             </div>
                           </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="cajon-infoform1">
+                                <label class="form-label label-form1 mb-0 pt-2 px-3 pb-1">Seleccione la fecha de publicación de su solicitud</label>
+                                <input type="date" class="form-control info-form1" id="fechainiciosolicitud-egresado-form2" required></input>
+                                <div class="invalid-feedback text-center">
+                                    ¿Cuál es la fecha inicio de su solicitud?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cajon-infoform1">
+                                <label class="form-label label-form1 mb-0 pt-2 px-3 pb-1">Seleccione la fecha limite de su solicitud</label>
+                                <input type="date" class="form-control info-form1" id="fechafinalsolicitud-egresado-form2" required></input>
+                                <div class="invalid-feedback text-center">
+                                    ¿Cuál es la fecha final de su solicitud?
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row d-flex justify-content-center align-items-center text-center">
@@ -228,6 +249,7 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
   <script src="/src/js/checklogin.js"></script>
+  <script src="/src/js/navfixed.js"></script>
   <script src="/script-form1.js"></script>
 </body>
 

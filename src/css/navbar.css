@@ -6,7 +6,7 @@
     background-color: rgb(227, 241, 246);
     justify-content: space-around;
     text-align: center;
-    width: 100%;
+    max-width: 100%;
 }
 
 .navbar-trabajo > .container-fluid {
