@@ -50,11 +50,6 @@
     margin: 0;
 }
 
-.des{
-    font-size: 16px;
-    margin: 0;
-}
-
 .cajon-solicitud, .cajon-oferta {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     background-color: rgba(255, 255, 255, 0.82);
@@ -65,12 +60,16 @@
 }
 
 .cajon-item-des{
-    padding: 5px 60px 0px 60px;
+    padding: 5px 40px 0px 40px;
     background-color: rgba(255, 255, 255, 0.75);
 }
 
 .cajon-items-fechas{
     padding: 5px 250px 100px 250px;
+}
+
+.cajon-items-fechas-eg{
+    padding: 5px 250px 30px 250px;
 }
 
 .item-subtitle-empresa {
@@ -81,4 +80,42 @@
 
 .item-empresa{
     color: rgb(100, 105, 110);
+}
+
+.btnhojadevida{
+    background-color: rgba(255, 255, 255, 0.7); 
+    color: #222;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btnhojadevida:hover {
+    background-color: rgba(255, 255, 255, 0.9); 
+    transform: scale(1.05); 
+}
+
+@media (max-width: 1028px){
+    .cajon-laboral{
+        margin: 10px 10px 50px 10px;
+        padding: 10px;
+    }
+
+    .cajon-items{
+        padding: 10px 0px 0px 0px;
+    }
+
+    .cajon-items-fechas{
+        padding: 5px 0px 100px 0px;
+    }
+
+    .cajon-title{
+        margin-top: 24%;
+    }
 }

@@ -46,9 +46,15 @@
     transform: scale(1.03); 
 }
 
+.imagen-perfil-eg{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 14px;
+    border-radius: 50%;
+}
+
 @media (max-width: 1028px){
     .cajon-laboral{
-        margin: 10px 20px 50px 20px;
+        margin: 10px 15px 50px 15px;
+        padding: 10px;
     }
 
     .cajon-title {
