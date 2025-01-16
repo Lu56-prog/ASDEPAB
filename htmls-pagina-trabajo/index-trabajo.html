@@ -41,19 +41,6 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-                
-            <!-- Mobile Profile (shown before navbars on mobile) -->
-            <ul class="navbar-nav profile-mobile d-sm-none">
-                <li class="nav-item dropdown profile">
-                <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="dropdown-item" id="register-pc"><a href="/Perfil.html">Ver Perfil</a></li>
-                    </li>
-                </ul>
-                </li>
-            </ul>
 
             <div class="collapse navbar-collapse" id="navbars">
                 <ul class="navbar-nav me-2 mb-2 mb-sm-0">
@@ -68,6 +55,18 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Ayuda</a>
+                    </li>
+                </ul>
+                <!-- Mobile Profile (shown before navbars on mobile) -->
+                <ul class="navbar-nav profile-mobile d-sm-none">
+                    <li class="nav-item dropdown profile">
+                    <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item" id="register-pc"><a href="/Perfil.html">Ver Perfil</a></li>
+                        </li>
+                    </ul>
                     </li>
                 </ul>
             </div>
@@ -91,50 +90,16 @@
     <main>
         <section>
             <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img class="bd-placeholder-img" src="/src/img/imagen-bloque1.jpg" alt="Bloque1" width="100%"
-                            height="100%">
-                        <div class="container">
-                            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center ">
-                                <h1>One more for good measure.</h1>
-                                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                <div class="carousel-inner img-banner">
+                    <div class="carousel-item active img-banner" data-bs-interval="10000">
+                        <div class="container mb-5">
+                            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center banner-info">
+                                <img src="/src/img/ESCUDO PBPR2.png" alt="ESCUDO PASCUAL BRAVO PRORED" class="imagen-escudo-banner mb-4">
+                                <h2 class="title-incio">¡Bienvenidos a Pascual Bravo ProRed!</h2>
+                                <p class="d-none d-md-block">Nos enorgullece presentarles este espacio, un entorno pensado para quienes desean avanzar en su trayectoria profesional y aprovechar nuevas oportunidades. Bienvenido a un lugar que facilita el crecimiento profesional y promueve nuevas conexiones.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="10000">
-                        <img class="bd-placeholder-img" src="/src/img/imagen-bloque-1.jpg" alt="Bloque1" width="100%"
-                            height="100%">
-                        <div class="container">
-                            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                                <h1>Instituto Técnico Industrial Pascual Bravo</h1>
-                                <p>¡Mantente actualizado con todo lo que sucede dentro de la Institución!</p>
-                                <p><a class="btn btn-lg btn-primary" href='https://www.tecnicopascualbravo.edu.co/'>IR
-                                        AL ITIPB</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="10000">
-                        <img class="bd-placeholder-img" src="/src/img/campus-verde.jpg" alt="Campus Verde" width="100%"
-                            height="100%">
-                        <div class="container">
-                            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center ">
-                                <h1>One more for good measure.</h1>
-                                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="index-trabajo.html">Página de Trabajo</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </section>
 

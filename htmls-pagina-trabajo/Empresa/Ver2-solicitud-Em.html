@@ -20,7 +20,6 @@
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark navbar-trabajo" id="navbar">
         <div class="container-fluid">
-
             <!-- Logo para escritorio -->
             <a href="https://www.tecnicopascualbravo.edu.co/" target="_blank">
                 <img src="/src/img/ESCUDO1 ITIPB.png" alt="Logo ITIPB" class="pascual-logo logo d-none d-md-block">
@@ -28,7 +27,7 @@
             <a href="/htmls-pagina-principal/index-principal.html">
                 <img src="/src/img/ESCUDO1 ASDEPAB.png" class="asdepab-logo logo2 d-none d-md-block" alt="Logo ASDEPAB">
             </a>
-            <a href="index-trabajo.html">
+            <a href="/htmls-pagina-trabajo/index-trabajo.html">
                 <img src="/src/img/ESCUDO PBPR.png" class="PBPR-logo logo2 d-none d-md-block" alt="Logo Pascual Bravo ProRed">
             </a>
 
@@ -43,18 +42,6 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Mobile Profile (shown before navbars on mobile) -->
-            <ul class="navbar-nav profile-mobile d-sm-none">
-                <li class="nav-item dropdown profile">
-                <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="dropdown-item" id="register-pc"><a href="/Perfil.html">Ver Perfil</a></li>
-                    </li>
-                </ul>
-                </li>
-            </ul>
 
             <div class="collapse navbar-collapse" id="navbars">
                 <ul class="navbar-nav me-2 mb-2 mb-sm-0">
@@ -71,6 +58,18 @@
                         <a class="nav-link" href="#">Ayuda</a>
                     </li>
                 </ul>
+                <!-- Mobile Profile (shown before navbars on mobile) -->
+                <ul class="navbar-nav profile-mobile d-sm-none">
+                    <li class="nav-item dropdown profile">
+                    <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item" id="register-pc"><a href="/Perfil.html">Ver Perfil</a></li>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
             </div>
 
             <!-- Desktop Profile (shown after navbars on desktop) -->
@@ -84,6 +83,7 @@
                     </ul>
                 </li>
             </ul>
+
         </div>
     </nav>
 
@@ -105,7 +105,10 @@
                         <div class="cajon-solicitud h-100 py-4 px-3 rounded-3">
                             <h2 class="item-subtitle text-center">Información del Egresado</h2>
                             <hr class="featurette-divider">
-                            <h3 class="item-1 text-center">Ocupacion</h3>
+                            <div class="input-group has-validation d-flex align-items-md-stretch mb-3 cajon-items justify-content-center mb-4">
+                                <img src="/src/img/fotodocumentoejemplo.jpg" alt="Imagen de Perfil"  class="imagen-perfil-eg" width="150px" height="170px">
+                                <h3 class="item-1 text-center d-flex align-items-center ms-4">Ocupacion</h3>
+                            </div>
 
                             
                             <div class="row d-flex align-items-md-stretch cajon-items">
@@ -142,23 +145,31 @@
 
                             <div class="row d-flex align-items-md-stretch cajon-items">
                                 <!--Fecha Nacimiento-->
-                                <div class="col-md-6">
-                                    <div class="input-group has-validation d-flex align-items-center m-0 mb-3 justify-content-md-end">
+                                <div class="col-md-4">
+                                    <div class="input-group has-validation d-flex align-items-center m-0 mb-3 justify-content-md-start">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
                                             <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
                                             <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
                                         </svg>
-                                        <p class="item-2 ms-3 me-lg-4 d-none d-md-block">Fecha nacimiento:  15/03/2000</p>
-                                        <p class="item-2 ms-3 me-lg-4 d-block d-md-none">F. Nacimiento:  15/03/2000</p>
+                                        <p class="item-2 ms-3">F. nacimiento: 15/03/2000</p>
                                     </div>
                                 </div>
                                 <!--Género egresado-->
-                                <div class="col-md-6">
-                                    <div class="input-group has-validation d-flex align-items-center m-0 mb-3 justify-content-md-start">
+                                <div class="col-md-4">
+                                    <div class="input-group has-validation d-flex align-items-center m-0 mb-3 justify-content-md-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gender-ambiguous ms-lg-5" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M11.5 1a.5.5 0 0 1 0-1h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-3.45 3.45A4 4 0 0 1 8.5 10.97V13H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V14H6a.5.5 0 0 1 0-1h1.5v-2.03a4 4 0 1 1 3.471-6.648L14.293 1zm-.997 4.346a3 3 0 1 0-5.006 3.309 3 3 0 0 0 5.006-3.31z"/>
                                         </svg>
                                         <p class="item-2 ms-3">Género: Femenino</p>
+                                    </div>
+                                </div>
+                                <!--Ubicacion egresado-->
+                                <div class="col-md-4">
+                                    <div class="input-group has-validation d-flex align-items-center m-0 mb-3 justify-content-md-end">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+                                        </svg>
+                                        <p class="item-2 ms-3">Bogotá, Colombia</p>
                                     </div>
                                 </div>
                             </div>
@@ -255,7 +266,7 @@
 
                             <div class="row d-flex align-items-md-stretch mt-2 mb-5">
                                 <div class="d-flex justify-content-center text-center">
-                                    <a href="/src/css/Documentos/ESTATUTO GENERAL ASDEPAB.pdf" target="_blank" class="btnhojadevida">
+                                    <a href="/src/css/Documentos/hojadevidaejemplo.pdf" target="_blank" class="btnhojadevida">
                                         VER HOJA DE VIDA DEL EGRESADO
                                     </a>
                                 </div>

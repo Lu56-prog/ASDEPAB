@@ -158,10 +158,10 @@ h1{
 }
 
 .cajon_urltrabajo{
-    background-color: #f8f8f8;
+    background-color: rgb(255, 255, 255);
     border-radius: 8px;
-    border: 2px solid #dee2e6;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 2px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
 }
 
 .map-container {
