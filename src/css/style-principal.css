@@ -17,6 +17,18 @@ h1{
     font-weight: 900;
 }
 
+.option-block-egresado{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: rgba(255, 255, 255, 0.82);
+    border-radius: 20px;
+}
+
+.option-block-empresa {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: rgba(194, 83, 83, 0.82);
+    border-radius: 20px;
+}
+
 /*Carousel*/
 .carousel-1, .carousel-2, .carousel-3{
     background-color: rgba(0, 0, 0, 0.15); 
