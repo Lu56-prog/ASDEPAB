@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecology Computer</title>
+    <link rel="icon" href="assets/iconoMB.png">
+    <link rel="stylesheet" href="styleRegistro.css">
+    <link rel="stylesheet" href="nav-footer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i><img src="assets/menu-hamburguesa.png" alt=""></i>
+    </label>
+      
+    <a href="index.html" class="enlace">
+        <img src="assets/iconoPC.png" alt="Logo PC" class="logo logo-pc">
+        <img src="assets/iconoMB.png" alt="Logo Móvil" class="logo logo-mobile">
+        <img src="assets/Nombre.png" alt="Nombre de empresa" class="nombre-empresa">
+    </a>
+    <ul>
+        <li><a href="index.html#about-us">QUIENES SOMOS</a></li>
+        <li class="dropdown">
+            <a href="index.html#services">SERVICIOS</a>
+            <ul class="dropdown-menu">
+                <li><a href="Tienda.html">Tienda Virtual</a></li>
+                <li><a href="Mantenimiento.html">Reparar</a></li>
+                <li><a href="#">Contáctanos</a></li>
+            </ul>
+        </li>
+        <li><a href="index.html#reviews">RESEÑAS</a></li>
+        <li class="profile">
+            <a href="#">
+                <img src="assets/UsuarioIcon.png" alt="Perfil" class="profile-img">
+            </a>
+            <ul class="dropdown-menu">
+                <li id="register"><a href="Registro.html">Registrarse</a></li>
+                <li id="login"><a href="Inicio.html">Iniciar Sesión</a></li>
+                <li id="logout"><a href="#" class="logout-btn">Cerrar Sesión</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<body>
+    <div class="form-container">
+        <h2>REGISTRO</h2>
+        <form id="registro-form">
+            <div class="input-group">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellido" placeholder="Apellido" required>
+            </div>
+            <div class="input-group">
+                <select id="genero" required>
+                    <option value="" disabled selected>Seleccionar Género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <input type="number" id="edad" placeholder="Edad" required>
+            </div>            
+            <div class="input-group">
+                <input type="email" id="correo" placeholder="Correo" required>
+                <input type="password" id="contrasena" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="btn-crear">Crear Cuenta</button>
+            <p>¿Ya estas registrado? <a href="Inicio.html">Inicie sesión aquí</a></p>
+        </form>
+    </div>
+    
+    <footer class="footer">
+        <!-- Nombre de la empresa -->
+        <p class="footer-text">© 2024 Ecology Computer</p>
+    
+        <!-- Iconos de redes sociales -->
+        <div class="footer-socials">
+            <a href="https://facebook.com" target="_blank" class="social-link">
+                <i class="fab fa-facebook-f social-icon"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-link">
+                <i class="fab fa-twitter social-icon"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-link">
+                <i class="fab fa-instagram social-icon"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-link">
+                <i class="fab fa-linkedin-in social-icon"></i>
+            </a>
+        </div>
+    </footer>
+    
+    <script src="checklogin.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
