@@ -297,6 +297,10 @@ margin-top: 20px;
 color: #626a70;
 }
 
+.iniciosesion{
+    margin: auto;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .title-mision-vision {
