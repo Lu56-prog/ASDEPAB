@@ -13,13 +13,13 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombreEgresado = $_POST['nombreEgresado'];
-    $correoEgresado = $_POST['correoEgresado'];
-    $telefonoEgresado = $_POST['telefonoEgresado'];
-    $direccionEgresado = $_POST['direccionEgresado'];
+    $nombreEgresado = $_POST['nombre'];
+    $correoEgresado = $_POST['correo'];
+    $telefonoEgresado = $_POST['telefono'];
+    $direccionEgresado = $_POST['direccion'];
     $passwordEgresado = password_hash($_POST['passwordEgresado'], PASSWORD_DEFAULT);
-    $añograduacionEgresado = $_POST['añograduacionEgresado'];
-    $tituloEgresado = $_POST['tituloEgresado'];
+    $añograduacionEgresado = $_POST['graduacion'];
+    $tituloEgresado = $_POST['titulo'];
 
     $sql = "INSERT INTO egresados (nombre, correo, telefono, direccion, passwordEgresado, graduacion, titulo) VALUES ('$nombreEgresado', '$correoEgresado', '$telefonoEgresado', '$direccionEgresado', '$passwordEgresado', '$añograduacionEgresado', '$tituloEgresado')";
 
