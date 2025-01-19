@@ -12,20 +12,39 @@ if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
+// Inicializar variables para evitar errores de "Undefined array key"
+$nombreEgresado = $correoEgresado = $telefonoEgresado = $passwordEgresado = $añograduacionEgresado = $tituloEgresado = "";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombreEgresado = $_POST['nombre'];
-    $correoEgresado = $_POST['correo'];
-    $telefonoEgresado = $_POST['telefono'];
-    $passwordEgresado = password_hash($_POST['passwordEgresado'], PASSWORD_DEFAULT);
-    $añograduacionEgresado = $_POST['graduacion'];
-    $tituloEgresado = $_POST['titulo'];
+    // Verificar que todas las claves existen antes de usarlas
+    if (
+        isset($_POST['nombre']) &&
+        isset($_POST['correo']) &&
+        isset($_POST['telefono']) &&
+        isset($_POST['passwordEgresado']) &&
+        isset($_POST['graduacion']) &&
+        isset($_POST['titulo'])
+    ) {
+        $nombreEgresado = $_POST['nombre'];
+        $correoEgresado = $_POST['correo'];
+        $telefonoEgresado = $_POST['telefono'];
+        $passwordEgresado = password_hash($_POST['passwordEgresado'], PASSWORD_DEFAULT);
+        $añograduacionEgresado = $_POST['graduacion'];
+        $tituloEgresado = $_POST['titulo'];
 
-    $sql = "INSERT INTO egresados (nombre, correo, telefono, passwordEgresado, graduacion, titulo) VALUES ('$nombreEgresado', '$correoEgresado', '$telefonoEgresado', '$passwordEgresado', '$añograduacionEgresado', '$tituloEgresado')";
+        // Usar sentencias preparadas para evitar inyecciones SQL
+        $stmt = $conn->prepare("INSERT INTO egresados (nombre, correo, telefono, passwordEgresado, graduacion, titulo) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssssss", $nombreEgresado, $correoEgresado, $telefonoEgresado, $passwordEgresado, $añograduacionEgresado, $tituloEgresado);
 
-    if ($conn->query($sql) === TRUE) {
-        echo "Registro de egresado exitoso!";
+        if ($stmt->execute()) {
+            echo "Registro de egresado exitoso!";
+        } else {
+            echo "Error: " . $stmt->error;
+        }
+
+        $stmt->close();
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Por favor, completa todos los campos del formulario.";
     }
 }
 
