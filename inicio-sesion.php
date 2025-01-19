@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
-        if (password_verify($passwordEgresado, $row['password'])) {
+        if (password_verify($passwordEgresado, $row['passwordEgresado'])) {
             echo "Inicio de sesión exitoso como egresado!";
         } else {
             echo "Correo o contraseña incorrectos.";
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
-            if (password_verify($passwordEmpresa, $row['password'])) {
+            if (password_verify($passwordEmpresa, $row['passwordEmpresa'])) {
                 echo "Inicio de sesión exitoso como empresa!";
             } else {
                 echo "Correo o contraseña incorrectos.";

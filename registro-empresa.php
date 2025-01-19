@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $empleadosEmpresa = $_POST['empleadosEmpresa'];
     $passwordEmpresa = password_hash($_POST['passwordEmpresa'], PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO empresas (nombre, nit, direccion, telefono, email, sector, empleados, password) VALUES ('$nombreEmpresa', '$nitEmpresa', '$direccionEmpresa', '$telefonoEmpresa', '$emailEmpresa', '$sectorEmpresa', '$empleadosEmpresa', '$passwordEmpresa')";	
+    $sql = "INSERT INTO empresas (nombre, nit, direccion, telefono, email, sector, empleados, passwordEmpresa) VALUES ('$nombreEmpresa', '$nitEmpresa', '$direccionEmpresa', '$telefonoEmpresa', '$emailEmpresa', '$sectorEmpresa', '$empleadosEmpresa', '$passwordEmpresa')";	
 
     if ($conn->query($sql) === TRUE) {
         echo "Registro de empresa exitoso!";

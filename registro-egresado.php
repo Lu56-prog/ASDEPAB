@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $añograduacionEgresado = $_POST['añograduacionEgresado'];
     $tituloEgresado = $_POST['tituloEgresado'];
 
-    $sql = "INSERT INTO egresados (nombre, correo, telefono, direccion, password, graduacion, titulo) VALUES ('$nombreEgresado', '$correoEgresado', '$telefonoEgresado', '$direccionEgresado', '$passwordEgresado', '$añograduacionEgresado', '$tituloEgresado')";
+    $sql = "INSERT INTO egresados (nombre, correo, telefono, direccion, passwordEgresado, graduacion, titulo) VALUES ('$nombreEgresado', '$correoEgresado', '$telefonoEgresado', '$direccionEgresado', '$passwordEgresado', '$añograduacionEgresado', '$tituloEgresado')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Registro de egresado exitoso!";
