@@ -7,7 +7,6 @@ CREATE TABLE egresados (
     nombre VARCHAR(255) NOT NULL,
     correo VARCHAR(255) NOT NULL,
     telefono VARCHAR(20),
-    direccion VARCHAR(255),
     passwordEgresado VARCHAR(255),
     graduacion DATE,
     titulo VARCHAR(255)
