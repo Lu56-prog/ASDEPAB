@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -50,6 +50,15 @@
                 <li class="dropdown-item" id="logout-mobile"><a href="#" class="logout-btn">Cerrar Sesión</a>
                 </li>
               </ul>
+                <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item" id="register-mobile"><a href="/Opciones-registro.html">Registrarse</a></li>
+                    <li class="dropdown-item" id="login-mobile"><a href="inicio-sesion.html">Iniciar Sesión</a></li>
+                    <li class="dropdown-item" id="logout-mobile"><a href="#" class="logout-btn">Cerrar Sesión</a>
+                    </li>
+                </ul>
             </li>
           </ul>
     
@@ -95,7 +104,7 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li class="dropdown-item" id="register-pc"><a href="/Opciones-registro.html">Registrarse</a></li>
-                    <li class="dropdown-item" id="login-pc"><a href="/Opciones-registro.html">Iniciar Sesión</a></li>
+                    <li class="dropdown-item" id="login-pc"><a href="inicio-sesion.html">Iniciar Sesión</a></li>
                     <li class="dropdown-item" id="logout-pc"><a href="#" class="logout-btn">Cerrar Sesión</a></li>
                 </ul>
             </li>
@@ -111,19 +120,19 @@
         <section class="option-section d-flex">
             <div class="row mt-3 mx-5">
                 <div class="col-md-6">
-                    <div class="option-block egresado">
+                    <div class="option-block-egresado text-center">
                         <h2 class="subtitle-soyegresado mb-4">Soy Egresado</h2>
                         <p class="description-soyegresado mb-4">Accede a tu perfil, busca vacantes y mantente al tanto de nuevas oportunidades laborales diseñadas
                             para ti.</p>
-                        <a href="index-principal.html" class="option-button">Entrar como Egresado</a>
+                        <a href="registro-egresado.html" class="btn btn-primary pb-1 mb-2">Entrar como Egresado</a>
                     </div>
                 </div>
                 <div class="col-md-6"> 
-                    <div class="option-block empresa">
+                    <div class="option-block-empresa text-center">
                         <h2 class="subtitle-soyempresa mb-4">Busco Egresados</h2>
                         <p class="description-soyempresa mb-4">Encuentra el talento que necesitas. Accede a perfiles de egresados y publica vacantes en nuestra
                             plataforma.</p>
-                        <a href="empresas.html" class="option-button">Entrar como Empresa</a>
+                        <a href="registro-empresa.html" class="btn btn-primary pb-1 mb-2">Entrar como Empresa</a>
                     </div>
                 </div>
             </div>
