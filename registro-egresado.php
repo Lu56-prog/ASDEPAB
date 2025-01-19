@@ -14,14 +14,7 @@ if ($conn->connect_error) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verificar que todas las claves existen antes de usarlas
-    if (
-        isset($_POST['nombre']) &&
-        isset($_POST['correo']) &&
-        isset($_POST['telefono']) &&
-        isset($_POST['passwordEgresado']) &&
-        isset($_POST['graduacion']) &&
-        isset($_POST['titulo'])
-    ) {
+    
         $nombreEgresado = $_POST['nombre'];
         $correoEgresado = $_POST['correo'];
         $telefonoEgresado = $_POST['telefono'];
@@ -32,7 +25,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Por favor, completa todos los campos del formulario.";
     }
-}
 
 $conn->close();
 ?>
