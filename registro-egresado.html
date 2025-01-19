@@ -88,7 +88,7 @@
     </nav>
     <section class="d-flex justify-content-center align-items-center vh-100 iniciosesion">
         <main class="form-signin w-100 m-auto d-flex flex-column align-items-center">
-            <form>
+            <form action="registro-egresado.php" method="POST">
                 <div class="d-flex justify-content-center align-items-center">
                     <img class="mb-4" src="/src/img/ESCUDO2 ITIPB.png" alt="" width="72" height="100">
                     <img class="mb-4" src="/src/img/ESCUDO2 ASDEPAB.png" alt="" width="90" height="100">
@@ -98,24 +98,28 @@
                 <h1 class="h3 mb-3 fw-normal">Registro de Egresado</h1>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingName" placeholder="Nombre Completo">
-                    <label for="floatingName">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombreEgresado" placeholder="Nombre Completo">
+                    <label for="nombreEgresado">Nombre Completo</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingEmail" placeholder="nombre@example.com">
-                    <label for="floatingEmail">Dirección de correo electrónico</label>
+                    <input type="email" class="form-control" id="correoEgresado" placeholder="nombre@example.com">
+                    <label for="correoEgresado">Dirección de correo electrónico</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
-                    <label for="floatingPassword">Contraseña</label>
+                    <input type="number" class="form-control" id="telefonoEgresado" placeholder="telefono">
+                    <label for="telefonoEgresado">Telefono de contacto</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingGraduationYear" placeholder="Año de Graduación">
-                    <label for="floatingGraduationYear">Año de Graduación</label>
+                    <input type="password" class="form-control" id="passwordEgresado" placeholder="Contraseña">
+                    <label for="passwordEgresado">Contraseña</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingDegree" placeholder="Título Obtenido">
-                    <label for="floatingDegree">Título Obtenido</label>
+                    <input type="text" class="form-control" id="añograduacionEgresado" placeholder="Año de Graduación">
+                    <label for="añograduacionEgresado">Año de Graduación</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="tituloEgresado" placeholder="Título Obtenido">
+                    <label for="tituloEgresado">Título Obtenido</label>
                 </div>
 
                 <button class="btn btn-primary w-100 py-2" type="submit">Registrarse</button>

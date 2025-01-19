@@ -91,7 +91,7 @@
         <h1 class="text-center">Registro de Empresas</h1>
         <p class="text-center">Complete el siguiente formulario para registrar su empresa en nuestra base de datos.</p>
 
-        <form class="row g-3 needs-validation" novalidate>
+        <form class="row g-3 needs-validation" novalidate action="registro-empresa.php" method="POST">
             <!-- Nombre de la empresa -->
             <div class="col-md-6">
                 <label for="nombreEmpresa" class="form-label">Nombre de la Empresa</label>
@@ -146,10 +146,10 @@
                     placeholder="Ingrese el número de empleados" required>
             </div>
 
-            <!-- Página web de la empresa -->
+            <!-- Contraseña de la empresa -->
             <div class="col-md-6">
-                <label for="webEmpresa" class="form-label">Página Web</label>
-                <input type="url" class="form-control" id="webEmpresa" placeholder="https://www.empresa.com">
+                <label for="passwordEmpresa" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="passwordEmpresa" placeholder="Contraseña">
             </div>
 
             <!-- Descripción de la empresa -->
