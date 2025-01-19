@@ -97,17 +97,17 @@
 }
 
 .subtitle-soyegresado, .subtitle-soyempresa{
-    font-size: 36px;
+    font-size: 38px;
     font-weight: 700;
 }
 
 .description-soyegresado, .description-soyempresa{
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 400;
 }
 
 .option-button {
-    display: inline-block;
+    width: 60%;
     background-color: #1E90FF;
     color: #fff;
     font-size: 1.1rem;
