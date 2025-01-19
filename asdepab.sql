@@ -10,7 +10,7 @@ CREATE TABLE egresados (
     direccion VARCHAR(255),
     passwordEgresado VARCHAR(255),
     graduacion DATE,
-    titulo VARCHAR(255),
+    titulo VARCHAR(255)
 );
 
 CREATE TABLE empresas (
@@ -22,5 +22,5 @@ CREATE TABLE empresas (
     email VARCHAR(255),
     sector VARCHAR(255),
     empleados INT,
-    passwordEmpresa VARCHAR(255),
-);
+    passwordEmpresa VARCHAR(255)
+)
