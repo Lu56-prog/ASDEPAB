@@ -29,17 +29,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $añograduacionEgresado = $_POST['graduacion'];
         $tituloEgresado = $_POST['titulo'];
 
-        // Usar sentencias preparadas para evitar inyecciones SQL
-        $stmt = $conn->prepare("INSERT INTO egresados (nombre, correo, telefono, passwordEgresado, graduacion, titulo) VALUES (?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssss", $nombreEgresado, $correoEgresado, $telefonoEgresado, $passwordEgresado, $añograduacionEgresado, $tituloEgresado);
-
-        if ($stmt->execute()) {
-            echo "Registro de egresado exitoso!";
-        } else {
-            echo "Error: " . $stmt->error;
-        }
-
-        $stmt->close();
     } else {
         echo "Por favor, completa todos los campos del formulario.";
     }
