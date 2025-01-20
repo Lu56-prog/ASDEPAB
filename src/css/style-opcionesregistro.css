@@ -61,10 +61,12 @@
 /* Fin Info Section */
 
 /* Option Section */
+.cajon-opciones{
+    margin: 10px 50px 30px 50px;
+}
 
 .option-section {
     width: 100%;
-    height: 60vh;
 }
 
 .option-block {
@@ -82,28 +84,30 @@
 
 .egresado {
     background-color: rgb(245, 85, 80);
-    height: 50vh;
     border: 2px solid #dee2e6;
     border-radius: 15px;
+    padding: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .empresa {
     background-color: rgb(190, 240, 255);
-    height: 50vh;
     border: 2px solid #dee2e6;
     border-radius: 15px;
+    padding: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .subtitle-soyegresado, .subtitle-soyempresa{
     font-size: 38px;
     font-weight: 700;
+    color: #222222;
 }
 
 .description-soyegresado, .description-soyempresa{
     font-size: 19px;
     font-weight: 400;
+    color: #222222;
 }
 
 .option-button {
@@ -127,3 +131,14 @@
 /* Fin Option Section */
 
 /* Fin Main */
+
+@media (max-width: 1028px){
+    .cajon-opciones{
+        margin: 10px 10px 30px 10px;
+    }
+
+    .option-button{
+        width: 100%;
+        padding: 15px 20px;
+    }
+}
