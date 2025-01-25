@@ -100,19 +100,13 @@
             <form action="registro-egresado.php" method="POST" class="needs-validation" novalidate id="formulario-registro-egresado">
                 <div class="cajon-formreg">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control info-formreg" id="nombreEgresado" name="nombre" placeholder="Ingrese su nombre completo" required>
-                                <!--PC-->
-                                <label for="nombreEgresado" class="d-none d-md-block">Ingrese su nombre completo</label>
-                                <!--MOVIL-->
-                                <label for="nombreEgresado" class="d-block d-md-none">Nombre completo</label>
-                                <div class="invalid-feedback text-center">
-                                    ¿Cuál es su nombre?
-                                </div>
+                        <div class="col-md-4 mb-3">
+                            <input type="text" class="form-control info-formreg" id="nombreEgresado" name="nombre" placeholder="Ingrese su nombre completo" required>
+                            <div class="invalid-feedback text-center">
+                                ¿Cuál es su nombre?
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-3">
                             <div class="input-group has-validation select-document">
                                 <select class="form-select info-formreg text-center" id="tipodocumentoEgresado" required>
                                     <option class="opcion" selected disabled value="">ID</option>
@@ -120,79 +114,50 @@
                                     <option class="opcion" value="tarjeta-identidad">T.I</option>
                                     <option class="opcion" value="cedula-extranjero">C.E</option>
                                 </select>
-                                <div class="form-floating mb-3">
-                                    <input type="number" class="form-control info-formreg" id="identificacionEgresado" name="identificacionEgresado" placeholder="Ingrese su número de identificación" required>
-                                    <!--PC-->
-                                    <label for="identificacionEgresado" class="d-none d-md-block">Ingrese su número de identificación</label>
-                                    <!--MOVIL-->
-                                    <label for="identificacionEgresado" class="d-block d-md-none">Número de identificación</label>
-                                </div>
+                                <input type="number" class="form-control info-formreg" id="identificacionEgresado" name="identificacionEgresado" placeholder="Ingrese su número de identificación" required>
                                 <div class="invalid-feedback text-center">
                                     ¿Cuál es su número de identificación?
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control info-formreg" id="passwordEgresado" name="passwordEgresado" placeholder="Contraseña" required>
-                                <label for="passwordEgresado">Contraseña</label>
-                                <div class="invalid-feedback text-center">
-                                    ¿Cuál sera su contraseña?
-                                </div>
+                        <div class="col-md-4 mb-3">
+                            <input type="password" class="form-control info-formreg" id="passwordEgresado" name="passwordEgresado" placeholder="Contraseña" required>
+                            <div class="invalid-feedback text-center">
+                                ¿Cuál sera su contraseña?
                             </div>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control info-formreg" id="correoEgresado" name="correo" placeholder="Correo electrónico" required>
-                                <!--PC-->
-                                <label for="correoEgresado" class="d-none d-md-block">Ingrese su correo electrónico</label>
-                                <!--MOVIL-->
-                                <label for="correoEgresado" class="d-block d-md-none">Correo electrónico</label>
-                                <div class="invalid-feedback text-center">
-                                    ¿Cuál es su correo eletrónico?
-                                </div>
+                        <div class="col-md-4 mb-3">
+                            <input type="email" class="form-control info-formreg" id="correoEgresado" name="correo" placeholder="Ingrese su correo electrónico" required>
+                            <div class="invalid-feedback text-center">
+                                ¿Cuál es su correo eletrónico?
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-floating mb-3">
-                                <input type="number" class="form-control info-formreg" id="telefonoEgresado" name="telefono" placeholder="telefono" required>
-                                <!--PC-->
-                                <label for="telefonoEgresado" class="d-none d-md-block">Ingrese su número de contacto</label>
-                                <!--MOVIL-->
-                                <label for="telefonoEgresado" class="d-block d-md-none">Número de contacto</label>
-                                <div class="invalid-feedback text-center">
-                                    ¿Cuál es su número de contacto?
-                                </div>
+                        <div class="col-md-4 mb-3">
+                            <input type="number" class="form-control info-formreg" id="telefonoEgresado" name="telefono" placeholder="Ingrese su número de contacto" required>
+                            <div class="invalid-feedback text-center">
+                                ¿Cuál es su número de contacto?
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-floating mb-3">
-                                <input type="date" class="form-control info-formreg" id="añograduacionEgresado" name="graduacion" placeholder="Ingrese año de graduación" required>
-                                <!--PC-->
-                                <label for="añograduacionEgresado" class="d-none d-md-block">Ingrese año de graduación</label>
-                                <!--MOVIL-->
-                                <label for="añograduacionEgresado" class="d-block d-md-none">Año de graduación</label>
-                                <div class="invalid-feedback text-center">
-                                    ¿En que año te graduaste del I.T.I.P.B?
-                                </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="cajon-infoform1">
+                                <div class="input-group has-validation">
+                                    <label class="form-label label-form1 mb-0 px-3 pb- d-flex align-items-center">Fecha de nacimiento</label>
+                                    <input type="date" class="form-control info-formreg" id="nacimientoEgresado" required></input>
+                                    <div class="invalid-feedback text-center">
+                                        ¿Cuál es su fecha de nacimiento?
+                                    </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="row d-flex justify-content-center">
-                        <div class="col-md-6">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control info-formreg" id="tituloEgresado" name="titulo" placeholder="Título Obtenido" required>
-                                <!--PC-->
-                                <label for="tituloEgresado" class="d-none d-md-block">Ingrese la técnica con que se graduo</label>
-                                <!--MOVIL-->
-                                <label for="tituloEgresado" class="d-block d-md-none">Técnica con que se graduo</label>
-                                <div class="invalid-feedback text-center">
-                                    ¿Con que técnica te graduaste el I.T.I.P.B?
-                                </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control info-formreg" id="tituloEgresado" name="titulo" placeholder="Ingrese la técnica con que se graduo" required>
+                            <div class="invalid-feedback text-center">
+                                ¿Con que técnica te graduaste el I.T.I.P.B?
                             </div>
                         </div>
                     </div>

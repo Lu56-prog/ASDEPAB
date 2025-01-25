@@ -99,76 +99,43 @@
             <form action="registro-empresa.php" method="POST" class="needs-validation" novalidate id="formulario-registro-empresa">
                 <div class="cajon-formreg">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control info-formreg" id="nombreEmpresa" placeholder="Ingrese el nombre de su empresa" required>
-                                <!--PC-->
-                                <label for="nombreEmpresa" class="form-label d-none d-md-block">Ingrese el nombre de la empresa</label>
-                                <!--MOVIL-->
-                                <label for="nombreEmpresa" class="form-label d-block d-md-none">Nombre de la empresa</label>
-                                <div class="invalid-feedback text-center">
-                                    ¿Cuál es el nombre de la empresa?
-                                </div>
+                        <div class="col-md-4 mb-3">
+                            <input type="text" class="form-control info-formreg" id="nombreEmpresa" placeholder="Ingrese el nombre de la empresa" required>
+                            <div class="invalid-feedback text-center">
+                                ¿Cuál es el nombre de la empresa?
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-floating mb-3">
-                                <input type="number" class="form-control info-formreg" id="nitEmpresa" placeholder="Ingrese el NIT de la empresa" required>
-                                <!--PC-->
-                                <label for="nitEmpresa" class="form-label d-none d-md-block">Ingres el NIT de la empresa</label>
-                                <!--MOVIL-->
-                                <label for="nitEmpresa" class="form-label d-block d-md-none">NIT de la empresa</label>
-                                <div class="invalid-feedback text-center">
-                                    ¿Cuál es el NIT de la empresa?
-                                </div>
+                        <div class="col-md-4 mb-3">
+                            <input type="number" class="form-control info-formreg" id="nitEmpresa" placeholder="Ingrese el NIT de la empresa" required>
+                            <div class="invalid-feedback text-center">
+                                ¿Cuál es el NIT de la empresa?
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control info-formreg" id="passwordEmpresa" placeholder="Contraseña" required>
-                                <label for="passwordEmpresa" class="form-label">Contraseña</label>
-                                <div class="invalid-feedback text-center">
-                                    ¿Cuál sera su contraseña?
-                                </div>
+                        <div class="col-md-4 mb-3">
+                            <input type="password" class="form-control info-formreg" id="passwordEmpresa" placeholder="Contraseña" required>
+                            <div class="invalid-feedback text-center">
+                                ¿Cuál sera su contraseña?
                             </div>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control info-formreg" id="actividadEmpresa" placeholder="Ingrese la actividad principal de la empresa" required>
-                                <!--PC-->
-                                <label for="actividadEmpresa" class="form-label d-none d-md-block">Ingrese la actividad principal de la empresa</label>
-                                <!--MOVIL-->
-                                <label for="actividadEmpresa" class="form-label d-block d-md-none">Actividad principal de la empresa</label>
-                                <div class="invalid-feedback text-center">
-                                    ¿Cuál es la actividad principal de la empresa?
-                                </div>
+                        <div class="col-md-4 mb-3">
+                            <input type="text" class="form-control info-formreg" id="actividadEmpresa" placeholder="Ingrese la actividad principal de la empresa" required>
+                            <div class="invalid-feedback text-center">
+                                ¿Cuál es la actividad principal de la empresa?
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control info-formreg" id="entidadEmpresa" placeholder="Ingrese el NIT de la empresa" required>
-                                <!--PC-->
-                                <label for="entidadEmpresa" class="form-label d-none d-md-block">Ingres el tipo de entidad a la que pertenece</label>
-                                <!--MOVIL-->
-                                <label for="entidadEmpresa" class="form-label  d-block d-md-none">Tipo de entidad</label>
-                                <div class="invalid-feedback text-center">
-                                    ¿Cuál es el tipo de entidad: privada, publica, mixta, etc?
-                                </div>
+                        <div class="col-md-4 mb-3">
+                            <input type="text" class="form-control info-formreg" id="entidadEmpresa" placeholder="Ingres el tipo de entidad a la que pertenece" required>
+                            <div class="invalid-feedback text-center">
+                                ¿Cuál es el tipo de entidad: privada, publica, mixta, etc?
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-3">
                             <div class="input-group has-validation">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control info-formreg" id="paisEmpresa" placeholder="País" required></input>
-                                    <label for="paisEmpresa" class="form-label">País</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control info-formreg" id="ciudadEmpresa" placeholder="Ciudad" required></input>
-                                    <label for="ciudadEmpresa" class="form-label">Ciudad</label>
-                                </div>
+                                <input type="text" class="form-control info-formreg" id="paisEmpresa" placeholder="País" required></input>
+                                <input type="text" class="form-control info-formreg" id="ciudadEmpresa" placeholder="Ciudad" required></input>
                                 <div class="invalid-feedback text-center">
                                     ¿Cuál es la ubicación actual de la empresa?
                                 </div>
@@ -177,58 +144,40 @@
                     </div>
 
                     <div class="row g-2">
-                        <div class="col-md-3">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control info-formreg" id="direccionEmpresa"
-                                    placeholder="Ingrese la dirección de la empresa" required></input>
-                                <label for="direccionEmpresa" class="form-label">Dirección de la empresa</label>
-                                <div class="invalid-feedback text-center">
-                                    ¿Cuál es la dirección actual de la empresa?
-                                </div>
+                        <div class="col-md-3 mb-3">
+                            <input type="text" class="form-control info-formreg" id="direccionEmpresa"
+                            placeholder="Dirección de la empresa" required></input>
+                        <div class="invalid-feedback text-center">
+                            ¿Cuál es la dirección actual de la empresa?
+                        </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <input type="tel" class="form-control info-formreg" id="celularEmpresa"
+                            placeholder="Número contacto de la empresa" required></input>
+                            <div class="invalid-feedback text-center">
+                                ¿Cuál es el número de contacto de la empresa?
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-floating mb-3">
-                                <input type="tel" class="form-control info-formreg" id="celularEmpresa"
-                                    placeholder="Ingrese la dirección de la empresa" required></input>
-                                <label for="celularEmpresa" class="form-label">Número contacto de la empresa</label>
-                                <div class="invalid-feedback text-center">
-                                    ¿Cuál es el número de contacto de la empresa?
-                                </div>
-                            </div>
+                        <div class="col-md-3 mb-3">
+                            <input type="tel" class="form-control info-formreg" id="telefonoEmpresa"
+                            placeholder="Otro contacto (opcional)"></input>
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-floating mb-3">
-                                <input type="tel" class="form-control info-formreg" id="telefonoEmpresa"
-                                    placeholder="Ingrese la dirección de la empresa"></input>
-                                <label for="telefonoEmpresa" class="form-label">Otro contacto (opcional)</label>
-                            </div>
+                        <div class="col-md-3 mb-3">
+                            <input type="email" class="form-control info-formreg" id="emailEmpresa"
+                            placeholder="Correo Electrónico de la empresa" required></input>
+                        <div class="invalid-feedback text-center">
+                            ¿Cuál es el correo electrónico de la empresa?
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control info-formreg" id="emailEmpresa"
-                                    placeholder="Ingrese la dirección de la empresa" required></input>
-                                <label for="emailEmpresa" class="form-label">Correo Electrónico de la empresa</label>
-                                <div class="invalid-feedback text-center">
-                                    ¿Cuál es el correo electrónico de la empresa?
-                                </div>
-                            </div>
                         </div>
                     </div>
 
                     <div class="row d-flex justify-content-center">
-                        <div class="col-12">
-                            <div class="form-floating mb-3">
+                        <div class="col-12 mb-3">
                                 <textarea class="form-control info-formreg des-reg" id="descripcionEmpresa" rows="4"
-                                placeholder="Proporcione una breve descripción de la empresa" required></textarea>
-                                <!--PC-->
-                                <label for="descripcionEmpresa" class="form-label d-none d-md-block">Ingrese una descripción de la empresa</label>
-                                <!--MOVIL-->
-                                <label for="descripcionEmpresa" class="form-label d-block d-md-none">Descripción de la empresa</label>
+                                placeholder="Ingrese una descripción de la empres" required></textarea>
                                 <div class="invalid-feedback text-center">
                                     ¿Cuál es la descripción de su empresa?
                                 </div>
-                            </div>
                         </div>
                     </div>
 

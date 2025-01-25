@@ -30,6 +30,18 @@
     border-radius: 15px;
 }
 
+.info-form2 {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.info-form3 {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
 .select-document .form-select {
     flex: 0 0 25%;
 }
@@ -47,7 +59,27 @@
 }
 
 .des2-form1{
-    height: 150px;
+    height: 300px;
+}
+
+#estudios-egresado-form2, #experiencia-egresado-form2 {
+    height: 200px;
+}
+
+#paispuesto-empresa-form2{
+    border-right: none;
+}
+
+#requisitos-empresa-form2{
+    height: 220px;
+}
+
+#dessalario-empresa-form2{
+    height: 170px;
+}
+
+#descripcion-empresa-form2, #aplicar-empresa-form2{
+    height: 300px;
 }
 
 .des-salario{
@@ -102,10 +134,14 @@
     }
 
     .cajon-title {
-        margin-top: 100px;
+        margin-top: 4%;
     }
 
     .info-form1, .cajon-infoform1{
         margin-bottom: 10px;
+    }
+
+    #requisitos-empresa-form2, #salario-empresa-form2 ,#dessalario-empresa-form2, #descripcion-empresa-form2, #aplicar-empresa-form2{
+        width: 110%;
     }
 }

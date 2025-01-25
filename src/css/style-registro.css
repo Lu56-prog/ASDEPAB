@@ -9,6 +9,12 @@
     border-radius: 10px;
 }
 
+.cajon-infoform1{
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    color: #555;
+}
+
 .cajon-formreg{
     background-image: url(/src/img/imagen-bloque-1.jpg);
     background-size: cover;
