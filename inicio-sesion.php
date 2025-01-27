@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -13,36 +14,51 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
     $password = $_POST['password'];
+    
+    if (!$email || !$password) {
+        die("Por favor complete todos los campos");
+    }
 
-    // Verificar si el usuario es un egresado
-    $sql = "SELECT * FROM egresados WHERE correo='$correoEgresado'";
-    $result = $conn->query($sql);
+    // Preparar consulta para egresados
+    $stmt = $conn->prepare("SELECT id, nombre, passwordEgresado FROM egresados WHERE correo = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
-        if (password_verify($passwordEgresado, $row['passwordEgresado'])) {
-            echo "Inicio de sesión exitoso como egresado!";
-        } else {
-            echo "Correo o contraseña incorrectos.";
+        if (password_verify($password, $row['passwordEgresado'])) {
+            $_SESSION['user_id'] = $row['id'];
+            $_SESSION['user_type'] = 'egresado';
+            $_SESSION['user_name'] = $row['nombre'];
+            header("Location: dashboard-egresado.php");
+            exit();
         }
     } else {
-        // Verificar si el usuario es una empresa
-        $sql = "SELECT * FROM empresas WHERE email='$emailEmpresa'";
-        $result = $conn->query($sql);
+        // Verificar empresas
+        $stmt = $conn->prepare("SELECT id, nombre, passwordEmpresa FROM empresas WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
 
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
-            if (password_verify($passwordEmpresa, $row['passwordEmpresa'])) {
-                echo "Inicio de sesión exitoso como empresa!";
-            } else {
-                echo "Correo o contraseña incorrectos.";
+            if (password_verify($password, $row['passwordEmpresa'])) {
+                $_SESSION['user_id'] = $row['id'];
+                $_SESSION['user_type'] = 'empresa';
+                $_SESSION['user_name'] = $row['nombre'];
+                header("Location: dashboard-empresa.php");
+                exit();
             }
-        } else {
-            echo "Correo o contraseña incorrectos.";
         }
     }
+    
+    // Si llegamos aquí, las credenciales son incorrectas
+    $_SESSION['error'] = "Correo o contraseña incorrectos";
+    header("Location: inicio-sesion.html");
+    exit();
 }
 
 $conn->close();
