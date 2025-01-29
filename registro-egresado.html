@@ -101,18 +101,18 @@
                 <div class="cajon-formreg">
                     <div class="row">
                         <div class="col-md-4 mb-3">
-                            <input type="text" class="form-control info-formreg" id="nombreEgresado" name="nombre" placeholder="Ingrese su nombre completo" required>
+                            <input type="text" class="form-control info-formreg" id="nombreEgresado" name="nombreEgresado" placeholder="Ingrese su nombre completo" required>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es su nombre?
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
                             <div class="input-group has-validation select-document">
-                                <select class="form-select info-formreg text-center" id="tipodocumentoEgresado" required>
+                                <select class="form-select info-formreg text-center" id="tipodocumentoEgresado" name="tipodocumentoEgresado" required>
                                     <option class="opcion" selected disabled value="">ID</option>
-                                    <option class="opcion" value="cedula">C.C</option>
-                                    <option class="opcion" value="tarjeta-identidad">T.I</option>
-                                    <option class="opcion" value="cedula-extranjero">C.E</option>
+                                    <option class="opcion" value="C.D">C.C</option>
+                                    <option class="opcion" value="T.I">T.I</option>
+                                    <option class="opcion" value="C.E">C.E</option>
                                 </select>
                                 <input type="number" class="form-control info-formreg" id="identificacionEgresado" name="identificacionEgresado" placeholder="Ingrese su número de identificación" required>
                                 <div class="invalid-feedback text-center">
@@ -130,13 +130,13 @@
 
                     <div class="row">
                         <div class="col-md-4 mb-3">
-                            <input type="email" class="form-control info-formreg" id="correoEgresado" name="correo" placeholder="Ingrese su correo electrónico" required>
+                            <input type="email" name="correoEgresado"class="form-control info-formreg" id="correoEgresado" placeholder="Ingrese su correo electrónico" required>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es su correo eletrónico?
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <input type="number" class="form-control info-formreg" id="telefonoEgresado" name="telefono" placeholder="Ingrese su número de contacto" required>
+                            <input type="number" class="form-control info-formreg" id="telefonoEgresado" name="telefonoEgresado" placeholder="Ingrese su número de contacto" required>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es su número de contacto?
                             </div>
@@ -145,7 +145,7 @@
                             <div class="cajon-infoform1">
                                 <div class="input-group has-validation">
                                     <label class="form-label label-form1 mb-0 px-3 pb- d-flex align-items-center">Fecha de nacimiento</label>
-                                    <input type="date" class="form-control info-formreg" id="nacimientoEgresado" required></input>
+                                    <input type="date" class="form-control info-formreg" id="nacimientoEgresado" name="nacimientoEgresado" required></input>
                                     <div class="invalid-feedback text-center">
                                         ¿Cuál es su fecha de nacimiento?
                                     </div>
@@ -155,7 +155,7 @@
 
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-6 mb-3">
-                            <input type="text" class="form-control info-formreg" id="tituloEgresado" name="titulo" placeholder="Ingrese la técnica con que se graduo" required>
+                            <input type="text" class="form-control info-formreg" id="tecnicaEgresado" name="tecnicaEgresado" placeholder="Ingrese la técnica con que se graduo" required>
                             <div class="invalid-feedback text-center">
                                 ¿Con que técnica te graduaste el I.T.I.P.B?
                             </div>
@@ -164,7 +164,7 @@
 
                     <div class="row d-flex justify-content-center text-center mb-2">
                         <div class="col-12">
-                            <button class="btn btn-primary w-50 py-2 btn-form type="submit">Registrarse</button>
+                            <button class="btn btn-primary w-50 py-2 btn-form" type="submit" name="btnregistroEgresado">Registrarse</button>
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center text-center">
