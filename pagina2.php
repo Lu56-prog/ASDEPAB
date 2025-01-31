@@ -1,23 +1,25 @@
-<html>
-<html>
+<?php
+$conexion = mysqli_connect("localhost", "root", "", "base1") 
+  or die("Problemas con la conexión");
 
-<head>
-  <title>Problema</title>
-</head>
+// Verificar que $_POST contenga datos
+if (!isset($_POST['nombre'], $_POST['mail'], $_POST['codigocurso'])) {
+  die("Error: Faltan datos en el formulario.");
+}
 
-<body>
-  <?php
-  $conexion = mysqli_connect("localhost", "root", "", "base1") or
-    die("Problemas con la conexión");
+$nombre = $_POST['nombre'];
+$mail = $_POST['mail'];
+$codigocurso = (int) $_POST['codigocurso']; // Convertir a número para evitar SQL Injection
 
-  mysqli_query($conexion, "insert into alumnos(nombre,mail,codigocurso) values 
-                       ('$_POST[nombre]','$_POST[mail]',$_POST[codigocurso])")
-    or die("Problemas en el select" . mysqli_error($conexion));
+$query = "INSERT INTO alumnos (nombre, mail, codigocurso) 
+          VALUES ('$nombre', '$mail', $codigocurso)";
 
-  mysqli_close($conexion);
+// Verificar si la consulta tiene errores
+if (!mysqli_query($conexion, $query)) {
+  die("Error en la consulta: " . mysqli_error($conexion));
+}
 
-  echo "El alumno fue dado de alta.";
-  ?>
-</body>
+mysqli_close($conexion);
 
-</html>
+echo "El alumno fue dado de alta.";
+?>

@@ -100,19 +100,19 @@
                 <div class="cajon-formreg">
                     <div class="row">
                         <div class="col-md-4 mb-3">
-                            <input type="text" class="form-control info-formreg" id="nombreEmpresa" placeholder="Ingrese el nombre de la empresa" required>
+                            <input type="text" class="form-control info-formreg" id="nombreEmpresa" name="nombreEmpresa" placeholder="Ingrese el nombre de la empresa" required>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es el nombre de la empresa?
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <input type="number" class="form-control info-formreg" id="nitEmpresa" placeholder="Ingrese el NIT de la empresa" required>
+                            <input type="number" class="form-control info-formreg" id="nitEmpresa" name="nitEmpresa" placeholder="Ingrese el NIT de la empresa" required>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es el NIT de la empresa?
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <input type="password" class="form-control info-formreg" id="passwordEmpresa" placeholder="Contraseña" required>
+                            <input type="password" class="form-control info-formreg" id="passwordEmpresa" name="passwordEmpresa" placeholder="Contraseña" required>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál sera su contraseña?
                             </div>
@@ -121,21 +121,21 @@
 
                     <div class="row">
                         <div class="col-md-4 mb-3">
-                            <input type="text" class="form-control info-formreg" id="actividadEmpresa" placeholder="Ingrese la actividad principal de la empresa" required>
+                            <input type="text" class="form-control info-formreg" id="actividadEmpresa" name="actividadEmpresa" placeholder="Ingrese la actividad principal de la empresa" required>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es la actividad principal de la empresa?
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <input type="text" class="form-control info-formreg" id="entidadEmpresa" placeholder="Ingres el tipo de entidad a la que pertenece" required>
+                            <input type="text" class="form-control info-formreg" id="entidadEmpresa" name="entidadEmpresa" placeholder="Ingres el tipo de entidad a la que pertenece" required>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es el tipo de entidad: privada, publica, mixta, etc?
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control info-formreg" id="paisEmpresa" placeholder="País" required></input>
-                                <input type="text" class="form-control info-formreg" id="ciudadEmpresa" placeholder="Ciudad" required></input>
+                                <input type="text" class="form-control info-formreg" id="paisEmpresa"  name="paisEmpresa" placeholder="País" required></input>
+                                <input type="text" class="form-control info-formreg" id="ciudadEmpresa"  name="ciudadEmpresa" placeholder="Ciudad" required></input>
                                 <div class="invalid-feedback text-center">
                                     ¿Cuál es la ubicación actual de la empresa?
                                 </div>
@@ -145,36 +145,32 @@
 
                     <div class="row g-2">
                         <div class="col-md-3 mb-3">
-                            <input type="text" class="form-control info-formreg" id="direccionEmpresa"
-                            placeholder="Dirección de la empresa" required></input>
-                        <div class="invalid-feedback text-center">
+                            <input type="text" class="form-control info-formreg" id="direccionEmpresa" name="direccionEmpresa" placeholder="Dirección de la empresa" required></input>
+                            <div class="invalid-feedback text-center">
                             ¿Cuál es la dirección actual de la empresa?
-                        </div>
+                            </div>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <input type="tel" class="form-control info-formreg" id="celularEmpresa"
-                            placeholder="Número contacto de la empresa" required></input>
+                            <input type="tel" class="form-control info-formreg" id="celularEmpresa" name="celularEmpresa" placeholder="Número contacto de la empresa" required></input>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es el número de contacto de la empresa?
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <input type="tel" class="form-control info-formreg" id="telefonoEmpresa"
-                            placeholder="Otro contacto (opcional)"></input>
+                            <input type="tel" class="form-control info-formreg" id="telefonoEmpresa" name="telefonoEmpresa" placeholder="Otro contacto (opcional)"></input>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <input type="email" class="form-control info-formreg" id="emailEmpresa"
-                            placeholder="Correo Electrónico de la empresa" required></input>
-                        <div class="invalid-feedback text-center">
-                            ¿Cuál es el correo electrónico de la empresa?
-                        </div>
+                            <input type="email" class="form-control info-formreg" id="emailEmpresa" name="emailEmpresa" placeholder="Correo Electrónico de la empresa" required></input>
+                            <div class="invalid-feedback text-center">
+                                ¿Cuál es el correo electrónico de la empresa?
+                            </div>
                         </div>
                     </div>
 
                     <div class="row d-flex justify-content-center">
                         <div class="col-12 mb-3">
-                                <textarea class="form-control info-formreg des-reg" id="descripcionEmpresa" rows="4"
-                                placeholder="Ingrese una descripción de la empres" required></textarea>
+                                <textarea class="form-control info-formreg des-reg" id="descripcionEmpresa" name="descripcionEmpresa" rows="4"
+                                placeholder="Ingrese una descripción de la empresa" required></textarea>
                                 <div class="invalid-feedback text-center">
                                     ¿Cuál es la descripción de su empresa?
                                 </div>
@@ -184,7 +180,7 @@
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input class="form-control info-formreg" type="file" id="imagenEmpresa" accept="image/png, image/jpeg, image/jpg">
+                                <input class="form-control info-formreg" type="file" id="imagenEmpresa" name="imagenEmpresa" accept="image/png, image/jpeg, image/jpg">
                                 <label for="imagennEmpresa" class="form-label ">Ingrese una imagen para su perfil (opcional)</label>
                             </div>
                         </div>
