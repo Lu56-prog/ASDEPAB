@@ -99,31 +99,31 @@
                 </div>
             </div>
             
-            <form class="needs-validation" novalidate id="formulario-egresado-1">
+            <form action="/base_de_datos/EGRESADOS/Pub-Form1-Eg.php" method="POST" class="needs-validation" novalidate id="formulario-egresado-1">
                 <div class="cajon-form1-eg">
                     <div class="row">
                         <div class="col-md-4">
-                            <input type="text" class="form-control info-form1" id="nombre-egresado-form1" placeholder="Ingrese su nombre completo" required></input>
+                            <input type="text" class="form-control info-form1" name="nombreEgresadoSolicitud" id="nombreEgresadoSolicitud" placeholder="Ingrese su nombre completo" required></input>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es su nombre completo?
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="input-group has-validation select-document">
-                                <select class="form-select info-form1" id="tipodocumento-egresado-form1" required>
+                                <select class="form-select info-form1" id="tipodocumentoEgresadoSolicitud" name="tipodocumentoEgresadoSolicitud" required>
                                     <option class="opcion" selected disabled value="">ID</option>
                                     <option class="opcion" value="cedula">C.C</option>
                                     <option class="opcion" value="tarjeta-identidad">T.I</option>
                                     <option class="opcion" value="cedula-extranjero">C.E</option>
                                 </select>
-                                <input type="number" class="form-control info-form1" id="identificacion-egresado-form1" placeholder="Su número de identificación" required></input>
+                                <input type="number" class="form-control info-form1" name="identificacionEgresadoSolicitud" id="identificacionEgresadoSolicitud" placeholder="Su número de identificación" required></input>
                                 <div class="invalid-feedback text-center">
                                     ¿Cuál es su número de identificación?
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <input type="number" class="form-control info-form1" id="edad-egresado-form1" placeholder="Ingrese su edad" required></input>
+                            <input type="number" class="form-control info-form1" name="edadEgresadoSolicitud" id="edadEgresadoSolicitud" placeholder="Ingrese su edad" required></input>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es su edad?
                             </div>
@@ -132,30 +132,30 @@
 
                     <div class="row mt-4">
                         <div class="col-md-4">
-                            <input type="tel" class="form-control info-form1" id="telefono-egresado-form1" placeholder="Ingresa un número de contacto valido" required></input>
+                            <input type="tel" class="form-control info-form1" name="telefonoEgresadoSolicitud" id="telefonoEgresadoSolicitud"  placeholder="Ingresa un número de contacto valido" required></input>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es su número de contacto?
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <input type="email" class="form-control info-form1" id="correo-egresado-form1" placeholder="Ingresa tu correo electronico" required></input>
+                            <input type="email" class="form-control info-form1" name="correoEgresadoSolicitud" id="correoEgresadoSolicitud"  placeholder="Ingresa tu correo electronico" required></input>
                             <div class="invalid-feedback text-center">
                                 Ingrese su correo electrónico correctamente, asegurándote de incluir el símbolo '@' y el dominio
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" class="form-control info-form1" id="direccion-egresado-form1" placeholder="Ingresa tu dirección" required></input>
+                            <input type="text" class="form-control info-form1" name="direccionEgresadoSolicitud" id="direccionEgresadoSolicitud" placeholder="Ingresa tu dirección" required></input>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es su dirección?
                             </div>
                         </div>
                     </div>
 
-                    <div class="row mt-4">
+                    <div class="row mt-4 justify-content-center">
                             <div class="col-md-4">
                                 <div class="cajon-infoform1">
                                     <label class="form-label label-form1 mb-0 pt-2 px-3 pb-1">Seleccione su fecha de nacimiento</label>
-                                    <input type="date" class="form-control info-form1" id="fechanacimiento-egresado-form1" required></input>
+                                    <input type="date" class="form-control info-form1" name="fnacimientoEgresadoSolicitud" id="fnacimientoEgresadoSolicitud" required></input>
                                     <div class="invalid-feedback text-center">
                                         ¿Cuál es su fecha de nacimiento?
                                     </div>
@@ -163,26 +163,12 @@
                             </div>
                         <div class="col-md-4">
                             <div class="cajon-infoform1">
-                                <label class="form-label label-form1 mb-0 mt-0 px-3 pt-2 pb-1">Selecciona tu género</label>
-                                <select class="form-select info-form1" id="genero-egresado-form1" required>
-                                    <option selected disabled value="">Selecciona</option>
-                                    <option value="masculino">Masculino</option>
-                                    <option value="femenino">Femenino</option>
-                                    <option value="otro">Otro</option>
-                                </select>
-                                <div class="invalid-feedback text-center">
-                                    ¿Cuál es su género?
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="cajon-infoform1">
                                 <label class="form-label label-form1 mb-0 mt-0 px-3 pt-2 pb-1">Ingrese su ubicación</label>
                                 <div class="input-group has-validation">
-                                    <input type="text" class="form-control info-form1" id="pais-egresadp-form1" placeholder="País" required></input>
-                                    <input type="text" class="form-control info-form1" id="ciudad-egresado-form1" placeholder="Ciudad" required></input>
+                                    <input type="text" class="form-control info-form1" name="paisEgresadoSolicitud" id="paisEgresadoSolicitud" placeholder="País" required></input>
+                                    <input type="text" class="form-control info-form1" name="ciudadEgresadoSolicitud" id="ciudadEgresadoSolicitud" placeholder="Ciudad" required></input>
                                     <div class="invalid-feedback text-center">
-                                        ¿Cuál es su ubicacióm actual?
+                                        ¿Cuál es su ubicación actual?
                                     </div>
                                 </div>
                             </div>

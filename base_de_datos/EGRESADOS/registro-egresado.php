@@ -13,9 +13,12 @@ $tecnicaEgresado= $_POST['tecnicaEgresado'];
 
 $query = "INSERT INTO `registro-egresados`(`nombreEgresado`, `tipodocumentoEgresado`, `identificacionEgresado`, `passwordEgresado`, `correoEgresado`, `telefonoEgresado`, `nacimientoEgresado`, `tecnicaEgresado`) VALUES ('$nombreEgresado', '$tipodocumentoEgresado', '$identificacionEgresado', '$passwordEgresado', '$correoEgresado', '$telefonoEgresado', '$nacimientoEgresado', '$tecnicaEgresado')";
 
-mysqli_query($conexion, $query);
+if (mysqli_query($conexion, $query)) {
+    echo "Los datos fueron guardados correctamente.";
+} else {
+    echo "Error al guardar los datos: " . mysqli_error($conexion);
+}
 
+// Cerrando la conexión
 mysqli_close($conexion);
-
-echo "El alumno fue dado de alta.";
 ?>

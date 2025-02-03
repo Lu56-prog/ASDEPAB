@@ -18,9 +18,12 @@ $imagenEmpresa = $_POST['imagenEmpresa'];
 
 $query = "INSERT INTO `registro-empresas`(`nombreEmpresa`, `nitEmpresa`, `passwordEmpresa`, `actividadEmpresa`, `entidadEmpresa`, `paisEmpresa`, `ciudadEmpresa`, `direccionEmpresa`, `celularEmpresa`, `telefonoEmpresa`, `emailEmpresa`, `descripcionEmpresa`, `imagenEmpresa`) VALUES ('$nombreEmpresa', '$nitEmpresa', '$passwordEmpresa', '$actividadEmpresa', '$entidadEmpresa', '$paisEmpresa', '$ciudadEmpresa', '$direccionEmpresa', '$celularEmpresa', '$telefonoEmpresa', '$emailEmpresa', '$descripcionEmpresa', '$imagenEmpresa')";
 
-mysqli_query($conexion, $query);
+if (mysqli_query($conexion, $query)) {
+    echo "Los datos fueron guardados correctamente.";
+} else {
+    echo "Error al guardar los datos: " . mysqli_error($conexion);
+}
 
+// Cerrando la conexión
 mysqli_close($conexion);
-
-echo "El alumno fue dado de alta.";
 ?>
