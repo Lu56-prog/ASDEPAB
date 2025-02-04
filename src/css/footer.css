@@ -55,8 +55,16 @@
     color: #E4405F;;
 }
 
+.watsapp{
+    color: #1E9E4F;
+}
+
 .gmail {
     color: #444444;
+}
+
+.phone{
+    color: #3A5A99;
 }
 
 .facebook:hover {
@@ -68,8 +76,17 @@
 }
 
 .instagram:hover {
-    color: #F2A9D5
+    color: #F2A9D5;
 }
+
+.watsapp :hover{
+    color: #5FBE92;
+}
+
+.phone:hover{
+    color:  #789AC8 ;
+}
+
 
 .maps:hover{
     color: #FFB3B3
