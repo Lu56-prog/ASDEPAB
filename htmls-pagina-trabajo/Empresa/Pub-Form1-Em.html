@@ -99,23 +99,23 @@
                 </div>
             </div>
             
-            <form class="needs-validation" novalidate id="formulario-egresado-1">
+            <form action="/base_de_datos/EMPRESA/Pub-Form1-Emp.php" method="POST" class="needs-validation" novalidate id="formulario-egresado-1">
                 <div class="cajon-form1-eg">
                     <div class="row">
                         <div class="col-md-4">
-                            <input type="text" class="form-control info-form1" id="nombre-empresa-form1" placeholder="Ingrese el nombre de la empresa" required></input>
+                            <input type="text" class="form-control info-form1" name="nombreEmpresaOferta" id="nombreEmpresaOferta" placeholder="Ingrese el nombre de la empresa" required></input>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es el nombre de su empresa?
                               </div>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" class="form-control info-form1" id="sector-empresa-form1" placeholder="Ingrese la actividad principal de la empresa" required></input>
+                            <input type="text" class="form-control info-form1" name="actividadEmpresaOferta" id="actividadEmpresaOferta" placeholder="Ingrese la actividad principal de la empresa" required></input>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es la actividad principal de la empresa?
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" class="form-control info-form1" id="direccion-empresa-form1" placeholder="Ingrese la dirección de la empresa" required></input>
+                            <input type="text" class="form-control info-form1" name="direccionEmpresaOferta" id="direccionEmpresaOferta" placeholder="Ingrese la dirección de la empresa" required></input>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es la dirección de la empresa?
                             </div>
@@ -124,19 +124,19 @@
 
                     <div class="row mt-4">
                         <div class="col-md-4">
-                            <input type="email" class="form-control info-form1" id="correo-empresa-form1" placeholder="Ingrese un correo electrónico de contacto" required></input>
+                            <input type="email" class="form-control info-form1" name="correoEmpresaOferta" id="correoEmpresaOferta" placeholder="Ingrese un correo electrónico de contacto" required></input>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es el correo electrónico de contacto?
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <input type="tel" class="form-control info-form1" id="celular-empresa-form1" placeholder="Ingrese un número celular para contacto" required></input>
+                            <input type="tel" class="form-control info-form1" name="contactoEmpresaOferta" id="contactoEmpresaOferta" placeholder="Ingrese un número de contacto de la empresa" required></input>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es el número de contacto?
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <input type="tel" class="form-control info-form1" id="tef-egresado-form1" placeholder="Ingrese un número de telefono para contacto" requiered></input>
+                            <input type="tel" class="form-control info-form1" name="otrocontactoEmpresaOferta" id="otrocontactoEmpresaOferta" placeholder="Ingrese otro numero de contacto (opcional)"></input>
                         </div>
                     </div>
 

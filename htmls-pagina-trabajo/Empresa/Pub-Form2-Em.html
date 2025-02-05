@@ -100,23 +100,23 @@
                 </div>
             </div>
             
-            <form class="needs-validation" novalidate id="formulario-egresado-1">
+            <form action="/base_de_datos/EMPRESA/Pub-Form2-Emp.php" method="POST" class="needs-validation" novalidate id="formulario-egresado-1">
                 <div class="cajon-form1-eg">
                     <div class="row">
                         <div class="col-md-4">
-                            <input type="text" class="form-control info-form1" id="cargo-empresa-form2" placeholder="Ingrese nombre del cargo disponible" required></input>
+                            <input type="text" class="form-control info-form1" name="cargoEmpresaOferta" id="cargoEmpresaOferta" placeholder="Ingrese nombre del cargo disponible" required></input>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es el nombre del cargo disponible?
                               </div>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" class="form-control info-form1" id="contrato-empresa-form2" placeholder="Ingrese el tipo de contracto" required></input>
+                            <input type="text" class="form-control info-form1" name="contratoEmpresaOferta" id="contratoEmpresaOferta" placeholder="Ingrese el tipo de contracto" required></input>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál el tipo de contracto para el cargo?
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" class="form-control info-form1" id="jornada-empresa-form2" placeholder="Ingrese la jornada laboral del cargo" required></input>
+                            <input type="text" class="form-control info-form1" name="jornadaEmpresaOferta" id="jornadaEmpresaOferta" placeholder="Ingrese la jornada laboral del cargo" required></input>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es la jornada laboral para el cargo?
                             </div>
@@ -126,25 +126,25 @@
                     <div class="row mt-4">
                         <div class="col-md-4">
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control info-form1" id="paispuesto-empresa-form2" placeholder="País" required></input>
-                                <input type="text" class="form-control info-form1" id="ciudadpuesto-empresa-form2" placeholder="Ciudad" required></input>
+                                <input type="text" class="form-control info-form1" name="paiscEmpresaOferta" id="paiscEmpresaOferta" placeholder="País" required></input>
+                                <input type="text" class="form-control info-form1" name="ciudadcEmpresaOferta" id="ciudadcEmpresaOferta" placeholder="Ciudad" required></input>
                                 <div class="invalid-feedback text-center">
                                     ¿Cuál es la ubicación del cargo?
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" class="form-control info-form1" id="direccionpuesto-empresa-form2" placeholder="Ingrese la dirección donde se ubica el cargo" required></input>
+                            <input type="text" class="form-control info-form1" name="direccioncEmpresaOferta" id="direccioncEmpresaOferta" placeholder="Ingrese la dirección donde se ubica el cargo" required></input>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es la dirección exacta del lugar de trabajo?
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <select class="form-select info-form1 select-mod" id="modalidad-empresa-form2" required>
+                            <select class="form-select info-form1 select-mod" name="modalidadEmpresaOferta" id="modalidadEmpresaOferta" required>
                                 <option selected disabled value="">Modalidad del Cargo</option>
-                                <option value="presencial">Precensial</option>
-                                <option value="remoto">Remoto</option>
-                                <option value="presencial-remoto">Presencial y Remoto</option>
+                                <option value="Presencial">Precensial</option>
+                                <option value="Remoto">Remoto</option>
+                                <option value="Presencial - Remoto">Presencial y Remoto</option>
                             </select>
                             <div class="invalid-feedback text-center">
                                 ¿El cargo es presencial o virtual?
@@ -153,25 +153,25 @@
 
                     <div class="row mt-4 d-flex align-items-md-stretch">
                         <div class="col-md-6">
-                            <textarea class="form-control info-form1 des2-form1" id="requisitos-empresa-form2" placeholder="Ingrese los requisitos para el obtener el cargo" required></textarea>
+                            <textarea class="form-control info-form1 des2-form1" name="requisitosEmpresaOferta" id="requisitosEmpresaOferta" placeholder="Ingrese los requisitos para el obtener el cargo" required></textarea>
                             <div class="invalid-feedback text-center mb-5">
                                 ¿Cuáles son los requisitos para el cargo?
                             </div>
                         </div>
                         
                         <div class="col-md-6">
-                            <input type="text" class="form-control info-form1 mb-2" id="salario-empresa-form2" placeholder="Indique el salario y periodo de pago ej: $2.000.000 (Mensual)" required></input>
+                            <input type="text" class="form-control info-form1 mb-2" name="salarioEmpresaOferta" id="salarioEmpresaOferta" placeholder="Indique el salario y periodo de pago ej: $2.000.000 (Mensual)" required></input>
                             <div class="invalid-feedback text-center mb-2">
                                 ¿Cuál es el salario ofrecido para el cargo?
                             </div>
-                            <textarea class="form-control info-form1 des2-form1 des-salario" id="dessalario-empresa-form2" placeholder="Proporcione información adicional referente al salario del cargo (Opcional)"></textarea>
+                            <textarea class="form-control info-form1 des2-form1 des-salario" name="dessalarioEmpresaOferta" id="dessalarioEmpresaOferta" placeholder="Proporcione información adicional referente al salario del cargo (Opcional)"></textarea>
                         </div>
                     </div>
 
                     
                     <div class="row mt-4">
                         <div class="col-12">
-                            <textarea class="form-control info-form1 des2-form1" id="descripcion-empresa-form2" placeholder="Proporciona una descripción detallada del cargo" required></textarea>
+                            <textarea class="form-control info-form1 des2-form1" name="descripcionEmpresaOferta" id="descripcionEmpresaOferta" placeholder="Proporciona una descripción detallada del cargo" required></textarea>
                             <div class="invalid-feedback text-center">
                                 ¿Cuál es la descripción del cargo?
                             </div>
@@ -180,7 +180,7 @@
 
                     <div class="row mt-4">
                         <div class="col-12">
-                            <textarea class="form-control info-form1 des2-form1" id="aplicar-empresa-form2" placeholder="Indique el procedimiento para que los egresados pascualinos puedan postularse al cargo" required></textarea>
+                            <textarea class="form-control info-form1 des2-form1" name="aplicarEmpresaOferta" id="aplicarEmpresaOferta" placeholder="Indique el procedimiento para que los egresados pascualinos puedan postularse al cargo" required></textarea>
                             <div class="invalid-feedback text-center">
                                 ¿Cómo deben postularse los egresados pascualinos para el cargo?
                             </div>
@@ -191,7 +191,7 @@
                         <div class="col-md-6">
                             <div class="cajon-infoform1">
                                 <label class="form-label label-form1 mb-0 pt-2 px-3 pb-1">Seleccione la fecha de publicación de la oferta laboral</label>
-                                <input type="date" class="form-control info-form1" id="fechainiciooferta-empresa-form2" required></input>
+                                <input type="date" class="form-control info-form1" name="finicioEmpresaOferta" id="finicioEmpresaOferta" required></input>
                                 <div class="invalid-feedback text-center">
                                     ¿Cuál es la fecha inicio de la oferta laboral?
                                 </div>
@@ -200,7 +200,7 @@
                         <div class="col-md-6">
                             <div class="cajon-infoform1">
                                 <label class="form-label label-form1 mb-0 pt-2 px-3 pb-1">Seleccione la fecha limite de la oferta laboral</label>
-                                <input type="date" class="form-control info-form1" id="fechafinaloferta-empresa-form2" required></input>
+                                <input type="date" class="form-control info-form1" name="ffinalEmpresaOferta" id="ffinalEmpresaOferta" required></input>
                                 <div class="invalid-feedback text-center">
                                     ¿Cuál es la fecha final de la oferta laboral?
                                 </div>
