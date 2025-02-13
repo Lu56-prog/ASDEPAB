@@ -54,6 +54,12 @@
     margin-top: 40px;
 }
 
+.cuadro-libro{
+    border: 2px solid #dee2e6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
 @media (max-width: 768px) {
     body {
         padding-bottom: 120px; 
