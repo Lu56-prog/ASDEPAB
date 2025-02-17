@@ -104,77 +104,79 @@
   </nav>
 
   <main>
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <!-- CAROUSEL -->
+    <section>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active carousel-1" data-bs-interval="10000">
+            <div class="container">
+              <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                <img src="/src/img/ESCUDO2 ASDEPAB.png" alt="ESCUDO ASDEPAB" class="img-banner">
+                <h2 class="subtitle-carousel">Nos alegra tenerte en ASDEPAB</h2>
+                <p class="text-carousel">Un lugar donde los egresados Pascualinos se encuentran, comparten y avanzan juntos</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-2" data-bs-interval="10000">
+            <div class="container">
+              <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                <h2 class="subtitle-carousel">Instituto Técnico Industrial Pascual Bravo</h2>
+                <p class="text-carousel">¡Mantente actualizado con todo lo que sucede dentro de la Institución!</p>
+                <p><a class="btn btn-lg btn-carousel" href='https://www.tecnicopascualbravo.edu.co/'>IR AL ITIPB</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-3" data-bs-interval="10000">
+            <div class="container">
+              <div class="carousel-caption d-flex flex-column justify-content-center align-items-center ">
+                <h2 class="subtitle-carousel">Conéctate con Pascual Bravo ProRed</h2>
+                <p class="text-carousel">Te invitamos a conectarte con las oportunidades laborales de nuestra bolsa de empleo P.B.P.R.</p>
+                <p><a class="btn btn-lg btn-carousel" href="/Opciones-registro.html">Pascual Bravo Pro Red</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active carousel-1" data-bs-interval="10000">
-          <div class="container">
-            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-              <img src="/src/img/ESCUDO2 ASDEPAB.png" alt="ESCUDO ASDEPAB" class="img-banner">
-              <h2 class="subtitle-carousel">Nos alegra tenerte en ASDEPAB</h2>
-              <p class="text-carousel">Un lugar donde los egresados Pascualinos se encuentran, comparten y avanzan juntos</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item carousel-2" data-bs-interval="10000">
-          <div class="container">
-            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-              <h2 class="subtitle-carousel">Instituto Técnico Industrial Pascual Bravo</h2>
-              <p class="text-carousel">¡Mantente actualizado con todo lo que sucede dentro de la Institución!</p>
-              <p><a class="btn btn-lg btn-carousel" href='https://www.tecnicopascualbravo.edu.co/'>IR AL ITIPB</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item carousel-3" data-bs-interval="10000">
-          <div class="container">
-            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center ">
-              <h2 class="subtitle-carousel">Conéctate con Pascual Bravo ProRed</h2>
-              <p class="text-carousel">Te invitamos a conectarte con las oportunidades laborales de nuestra bolsa de empleo P.B.P.R.</p>
-              <p><a class="btn btn-lg btn-carousel" href="/Opciones-registro.html">Pascual Bravo Pro Red</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    </section>
 
+    <!-- PRESIDENTE -->
+    <section class="container">
+      <div class="container marketing d-flex flex-column mt-5">
+        <div class="row d-flex justify-content-center align-items-center text-center">
+          <div class="">
+            <img class="img-presidente" src="/src/img/presidente-pascual.png" alt="Presidente Pascual" width="250"
+              height="300"></>
+            <h2 class="fw-normal">Nuestro Presidente</h2>
+            <h3 class="fw-junior">Pascual Bravo Echeverri</h3>
+            <p class="fw-description">Es un
+              verdadero privilegio liderar a un equipo tan diverso, unido por valores comunes que nos inspiran a crecer
+              juntos. <br> Es un honor formar parte de ASDEPAB, y me llena de entusiasmo pensar en todo lo que este nuevo
+              año nos depara. <br>Te inivito a sumergirte en nuestra página web, donde podrás conocer más acerca de
+              nuestra vibrante comunidad <br> ¡Explora todo lo que tenemos preparado para ti y acompañañanos en este
+              emocionante camino! </p>
+            <p class="fw-welcome">¡Bienvenido!</p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </section>
 
-    <!-- Marketing messaging and featurettes
-      ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <hr class="featurette-divider m-4">
 
-    <div class="container marketing d-flex flex-column mt-5">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row d-flex justify-content-center align-items-center text-center">
-        <div class="">
-          <img class="img-presidente" src="/src/img/presidente-pascual.png" alt="Presidente Pascual" width="250"
-            height="300"></>
-          <h2 class="fw-normal">Nuestro Presidente</h2>
-          <h3 class="fw-junior">Pascual Bravo Echeverri</h3>
-          <p class="fw-description">Es un
-            verdadero privilegio liderar a un equipo tan diverso, unido por valores comunes que nos inspiran a crecer
-            juntos. <br> Es un honor formar parte de ASDEPAB, y me llena de entusiasmo pensar en todo lo que este nuevo
-            año nos depara. <br>Te inivito a sumergirte en nuestra página web, donde podrás conocer más acerca de
-            nuestra vibrante comunidad <br> ¡Explora todo lo que tenemos preparado para ti y acompañañanos en este
-            emocionante camino! </p>
-          <p class="fw-welcome">¡Bienvenido!</p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-      <hr class="featurette-divider">
+    <!-- DIRECCION I.T.P.B-->
+    <section class="container">
 
       <div class="row align-items-md-stretch">
         <div class="col-md-6">
@@ -205,8 +207,12 @@
           </a>
         </div>
       </div>
+    </section>
 
-      <hr class="featurette-divider">
+    <!-- PASCUAL BRAVO PRO RED-->
+    <hr class="featurette-divider m-5">
+
+    <section class="container">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-8">
           <div class="h-100 px-5 py-4 cajon_urltrabajo rounded-3">
@@ -220,94 +226,83 @@
           </div>
         </div>
       </div>
+    </section>
 
 
-      <!-- START THE FEATURETTES -->
-      <hr class="featurette-divider">
+      <!-- NOVEDADES -->
+      <hr class="featurette-divider m-5">
+       <section class="container">
+        <div class="container-Novedades title-novedades">Novedades</div>
 
-      <div class="container-Novedades mt-5">Novedades</div>
-
-      <div class="row featurette align-items-center justify-content-center text-center">
-        <div class="col-md-7">
-          <h2 class="featurette">Conferencia Taller</h2>
-          <p class="lead">08 de ene de 2025, 11:30 a. m.</p>
-          <p class="lead">Medellín, Antioquia, Colombia</p>
-          <div class="d-flex gap-2 justify-content-center py-5">
-            <button class="btn btn-primary d-inline-flex align-items-center text-center" type="button">
-              Inscribirse
+        <div>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="carousel-caption">
+                  <h3 class="subtitle-novedad">Primera Novedad</h3>
+                  <p class="description-novedad">Descripción Novedad</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="carousel-caption">
+                  <h3  class="subtitle-novedad">Segunda Novedad</h3>
+                  <p class="description-novedad">Descripción Novedad</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption">
+                  <h3 class="subtitle-novedad">Tercerda Novedad</h3>
+                  <p class="description-novedad">Descripción Novedad</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
             </button>
           </div>
         </div>
-        <div class="col-md-5">
-          <img class="bd-placeholder-img featurette-image img-fluid mx-auto" src="/src/img/egresados-1978.jpg"
-            alt="Presidente Pascual" width="500" height="500">
+       </section>
+
+      <!-- UBIACIÓN -->
+      <hr class="divider-nuestro-insituto m-5">
+      <section class="container">
+        <h2 class="map-title">Dónde Encontrarnos</h2>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1613.7359373440488!2d-75.5880374750076!3d6.274585813381319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293cbe893c63%3A0x672ae84e7627cd97!2sCl.%2073%20%23%2073a-226%2C%20Pilarica%2C%20Medell%C3%ADn%2C%20Robledo%2C%20Medell%C3%ADn%2C%20Antioquia!5e1!3m2!1ses!2sco!4v1684171445132!5m2!1ses!2sco"
+            width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
-      </div>
+      </section>
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette align-items-center justify-content-center text-center">
-        <div class="col-md-7">
-          <h2 class="featurette">Conferencia Taller</h2>
-          <p class="lead">08 de ene de 2025, 11:30 a. m.</p>
-          <p class="lead">Medellín, Antioquia, Colombia</p>
-          <div class="d-flex gap-2 justify-content-center py-5">
-            <button class="btn btn-primary d-inline-flex align-items-center text-center" type="button">
-              Inscribirse
-            </button>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <img class="bd-placeholder-img featurette-image img-fluid mx-auto" src="/src/img/egresados-1978.jpg"
-            alt="Presidente Pascual" width="500" height="500">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette align-items-center justify-content-center text-center">
-        <div class="col-md-7">
-          <h2 class="featurette">Conferencia Taller</h2>
-          <p class="lead">08 de ene de 2025, 11:30 a. m.</p>
-          <p class="lead">Medellín, Antioquia, Colombia</p>
-          <div class="d-flex gap-2 justify-content-center py-5">
-            <button class="btn btn-primary d-inline-flex align-items-center text-center" type="button">
-              Inscribirse
-            </button>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <img class="bd-placeholder-img featurette-image img-fluid mx-auto" src="/src/img/egresados-1978.jpg"
-            alt="Presidente Pascual" width="500" height="500">
-        </div>
-      </div>
-
-      <hr class="divider-mv">
-
-      <h2 class="map-title">Dónde Encontrarnos</h2>
-
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1613.7359373440488!2d-75.5880374750076!3d6.274585813381319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293cbe893c63%3A0x672ae84e7627cd97!2sCl.%2073%20%23%2073a-226%2C%20Pilarica%2C%20Medell%C3%ADn%2C%20Robledo%2C%20Medell%C3%ADn%2C%20Antioquia!5e1!3m2!1ses!2sco!4v1684171445132!5m2!1ses!2sco"
-          width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-
-      <hr class="divider-nuestro-insituto">
-
-      <div class="container mt-5">
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <h2 class="subtitle-nuestra-institucion">Nuestro Instituto Técnico Industrial <br> Pascual Bravo</h2>
-            <div class="container-nuestra-institucion">
-              <video class="video-nuestra-institucion w-100" autoplay muted loop onclick="togglePlayPause(this)">
-                <source src="/src/img/nuestro instituto.mp4" type="video/mp4"">
-              Tu navegador no soporta el elemento de video.
-            </video>
+      <!-- VIDEO -->
+      <hr class="divider-nuestro-insituto m-5">
+      <section class="container">
+        <div>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <h2 class="subtitle-nuestra-institucion mt-3">Nuestro Instituto Técnico Industrial <br> Pascual Bravo</h2>
+              <div class="container-nuestra-institucion">
+                <video class="video-nuestra-institucion w-100" autoplay muted loop onclick="togglePlayPause(this)">
+                  <source src="/src/img/nuestro instituto.mp4" type="video/mp4"">
+                Tu navegador no soporta el elemento de video.
+              </video>
+              </div>
             </div>
           </div>
-        </div>
+      </section>
   </main>
 
   <p class=" frase-pascualinos mb-0 mt-5">"Pascualinos un día, Pascualinos toda la vida"</p>
