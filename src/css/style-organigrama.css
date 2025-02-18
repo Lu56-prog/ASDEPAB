@@ -54,19 +54,10 @@
     margin-top: 40px;
 }
 
-@media (max-width: 768px) {
-    body {
-        padding-bottom: 120px; 
-    }
-
+@media (max-width: 1028px) {
     .cajon-organigrama{
         width: 100%;
-        margin-left: 20px;
-        margin-top: 20%;
-    }
-
-    .title-organigrama{
-        margin-top: 28%;
+        margin: 0;
     }
 
     .desciption-organigrama{

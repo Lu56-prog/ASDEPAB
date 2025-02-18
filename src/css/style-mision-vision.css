@@ -69,23 +69,16 @@
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
 }
 
-/* Media Query para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-    body {
-        padding-bottom: 120px; 
-    }
 
+@media (max-width: 1028px) {
     .description-mision, .description-vision{
         text-align: left;
     }
     
-    .container-mn {
+    .container-mision-vision {
         flex-direction: column;
-        gap: 50px;
-        margin-top: 8%;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 10px;
+        margin: 0px;
+        padding: 5px;
     }
 
     .container-mision, .container-vision {
@@ -94,13 +87,18 @@
         order: 1; 
     }
 
-    .title-mision-vision {
-        margin-top: 18%;
-        margin-bottom: 12px;
-        order: 0; 
+    .container-mn{
+        margin: 5px;
+        gap: 50px;
     }
+
 
     .subtitle-mision-vision{
         margin-bottom: 12px;
+    }
+
+    .container-mision:hover, .container-vision:hover {
+        transform: scale(1.02); 
+        background-color: rgba(248, 249, 250, 0.85); 
     }
 }

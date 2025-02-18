@@ -52,7 +52,7 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 1.75;
-    color: #111;
+    color: #000000;
     text-align: justify;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
 }
@@ -78,14 +78,14 @@
     margin-top: 40px;
 }
 
-@media (max-width: 768px) {
-    body {
-        padding-bottom: 120px; 
-    }
+.description-p1-hitipb, .subtitle-p1-hitipb{
+    color: #111;
+}
 
+@media (max-width: 1028px) {
     .cajon-historia-ITIPB{
         width: 100%;
-        margin-left: 20px;
+        margin: 0px;
     }
 
     .title1-historia-ITIPB{

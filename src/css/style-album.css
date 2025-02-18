@@ -8,9 +8,8 @@
     font-weight: 700;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1028px) {
     .title-album {
-        margin-top: 25%;
         margin-bottom: 12px;
         order: 0; 
     }

@@ -65,11 +65,7 @@
     height: auto;
 }
 
-@media (max-width: 768px) {
-    .title-conocenos{
-        margin-top: 28%;
-    }
-
+@media (max-width: 1028px) {
     .desceription-1, .desceription-2, .desceription-3{
         text-align: left;
     }

@@ -60,19 +60,11 @@
     border-radius: 8px;
 }
 
-@media (max-width: 768px) {
-    body {
-        padding-bottom: 120px; 
-    }
-
+@media (max-width: 1028px) {
     .cajon-estatuto-general{
         width: 100%;
         margin-left: 20px;
-        margin-top: 20%;
-    }
-
-    .title-estatuto-general{
-        margin-top: 28%;
+        margin: 0;
     }
 
     .desciption-estatuto-general{

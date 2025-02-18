@@ -18,11 +18,7 @@
     text-align: justify;
 }
 
-@media (max-width: 768px) {
-    .title-conoce-ITIPB{
-        margin-top: 25%;
-    }
-
+@media (max-width: 1028px) {
     .description-p1, .description-p2, .description-p3{
         text-align: left;
     }

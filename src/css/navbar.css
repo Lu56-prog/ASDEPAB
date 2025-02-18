@@ -1,6 +1,4 @@
-
 /* Navbar */
-
 .navbar > .container-fluid {
     color: #222222;
     background-color: rgb(227, 241, 246);
@@ -18,7 +16,6 @@
 }
 
 .navbar {
-    padding-top: 75rem;
     width: 100%;
     z-index: 100;
     margin: 0;
@@ -27,6 +24,8 @@
 
 .navbar.fixed {
     position: fixed;
+    top: 0;
+    width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -48,7 +47,7 @@
 }
 
 .dropdown-toggle:focus{
-    color: rgb(0, 112, 190) !important; 
+    color: rgb(0, 112, 190) !important;
     border-style: solid;
     border-bottom-width: 1px;
 }
@@ -108,7 +107,7 @@
 .profile-mobile .dropdown-menu,
 .profile-desktop .dropdown-menu {
     position: absolute;
-    z-index: 1100; /* Higher z-index to ensure it's above other content */
+    z-index: 1100;
     top: 100%;
     right: 0;
     left: auto;
@@ -118,9 +117,6 @@
 .profile {
     position: relative;
 }
-
-/* Fin Navbar */
-
 
 /* Navbar V2 */
 .navbar {
