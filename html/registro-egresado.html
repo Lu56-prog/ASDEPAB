@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/src/css/style-registro.css">
+    <link rel="stylesheet" href="/css/Pagina Principal css/style-registro.css">
     <link rel="stylesheet" href="/css/Pagina Trabajo CSS/style-trabajo.css">
     <link rel="stylesheet" href="/css/Pagina Principal css/style-principal.css">
     <link rel="stylesheet" href="/css/fonts.css">
@@ -19,74 +19,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-xl navbar-dark navbar-trabajo" id="navbar">
-        <div class="container-fluid">
-            <!-- Logo para escritorio -->
-            <a href="https://www.tecnicopascualbravo.edu.co/" target="_blank">
-                <img src="/src/img/ESCUDO1 ITIPB.png" alt="Logo ITIPB" class="pascual-logo logo d-none d-md-block">
-            </a>
-            <a href="/htmls-pagina-principal/index-principal.html">
-                <img src="/src/img/ESCUDO1 ASDEPAB.png" class="asdepab-logo logo2 d-none d-md-block" alt="Logo ASDEPAB">
-            </a>
-            <a href="/htmls-pagina-trabajo/index-trabajo.html">
-                <img src="/src/img/ESCUDO PBPR.png" class="PBPR-logo logo2 d-none d-md-block"
-                    alt="Logo Pascual Bravo ProRed">
-            </a>
-
-            <!-- Logo para móviles -->
-            <img src="/src/img/ESCUDO2 ITIPB.png" alt="Logo ITIPB Móvil" class="pascual-logo logo d-md-none p-mobile">
-            <img src="/src/img/ESCUDO2 ASDEPAB.png" class="asdepab-logo logo2 d-md-none a-mobile"
-                alt="Logo ASDEPAB Móvil">
-            <img src="/src/img/ESCUDO PBPR2.png" class="PBPR-logo logo2 d-md-none a-mobile"
-                alt="Logo Pascual Bravo Pro Red Móvil">
-
-            <!-- Navbar Toggler -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
-                aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <div class="collapse navbar-collapse" id="navbars">
-                <ul class="navbar-nav me-2 mb-2 mb-sm-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/htmls-pagina-principal/index-principal.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/htmls-pagina-principal/contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ayuda</a>
-                    </li>
-                </ul>
-                <!-- Mobile Profile (shown before navbars on mobile) -->
-                <ul class="navbar-nav profile-mobile d-sm-none">
-                    <li class="nav-item dropdown profile">
-                        <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item" id="register-pc"><a href="/Perfil.html">Ver Perfil</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Desktop Profile (shown after navbars on desktop) -->
-            <ul class="navbar-nav profile-desktop d-none d-sm-flex">
-                <li class="nav-item dropdown profile">
-                    <a class="nav-link perfil dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="/src/img/UsuarioIcon.png" alt="Perfil" class="profile-img">
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item" id="register-pc"><a href="/Perfil.html">Ver Perfil</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
+    <!--NAVBAR-->
+    <div id="nav-principal"></div>
 
     <section class="registro-egresado">
         <!--div para que el navbar no colapse con el contenido (separador)-->
@@ -248,15 +182,15 @@
      </div>
    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-    <script src="/src/js/checklogin.js"></script>
-    <script src="/src/js/navfixed.js"></script>
-    <script src="/script-form1.js"></script>
+
+   <hr class="featurette-divider m-2">
+   <!--FOOTER-->
+   <div id="footer"></div>
+
+   <script src="/js/htmls.js"></script>
+   <script src="/js/checklogin.js"></script>
+   <script src="/js/navfixed.js"> </script>
+   <script src="/js/footer.js"></script>
 </body>
 
 </html>
