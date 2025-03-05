@@ -1,0 +1,30 @@
+/* Fuentes de texto */
+@font-face {
+    font-family: Quicksand;
+    src: url(Fuentes/Quicksand-Light.ttf) format(truetype);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Quicksand;
+    font-weight: 400;
+    src: url(Fuentes/Quicksand-Medium.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(Fuentes/Quicksand-SemiBold.ttf) format(truetype);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(Fuentes/Quicksand-Bold.ttf) format(truetype);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Lora;
+    src: url(Fuentes/Lora-MediumItalic.ttf) format(truetype);
+    font-weight: 900;
+}

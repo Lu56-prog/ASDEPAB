@@ -1,0 +1,61 @@
+.title-afilicacion{
+    font-weight: 900;
+    font-size: 38px;
+}
+
+.de-afilicacion{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.title-cuadro{
+    font-weight: 700;
+}
+
+.des-cuadro{
+    font-weight: 400;
+    font-size: 20px;
+    color: #111;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.cuadro-afiliacion, .cuadro-donacion{
+    background-color: rgba(248, 249, 250, 0.75); 
+    background-size: cover; 
+    background-position: center; 
+    background-blend-mode: overlay; 
+    position: relative; 
+    border-radius: 8px;
+    border: 2px solid #dee2e6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cuadro-afiliacion:hover, .cuadro-donacion:hover {
+    transform: scale(1.04); 
+    background-color: rgba(248, 249, 250, 0.85); 
+}
+
+.cuadro-afiliacion{
+    background-image: url('/Imagenes/fondo-1.jpeg');
+}
+
+.cuadro-donacion{
+    background-image: url('/Imagenes/fondo-2.jpeg');
+}
+
+.btn-cuadro {
+    background-color: #1E90FF; 
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-cuadro:hover {
+    background-color: #0077cc;
+}
